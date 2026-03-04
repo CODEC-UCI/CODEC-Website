@@ -31,16 +31,14 @@ header {
 }
 
 .header-glow {
-    color: #1a4a7a; /* Dark Blue so it shows up on the white header */
+    color: #1a4a7a; /* Your dark blue */
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;
+    transition: color 0.3s ease; /* This makes the color fade in smoothly */
 }
 
 .header-glow:hover {
-    /* A blue glow instead of a white one */
-    color: #3498db;
-    text-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+    color: #3498db; /* A lighter, "active" blue */
 }
 
 .nav-links {
