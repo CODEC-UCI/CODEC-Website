@@ -1,106 +1,255 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>CODEC | About Us</title>
     <style>
-        /* Base page colors: Tan background with Dark Blue text */
+        /* 1. GLOBAL STYLES (Copied from index.html) */
         body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            line-height: 1.6; 
-            color: #2c3e50; /* Dark Navy Blue */
-            max-width: 800px; 
-            margin: 0 auto; 
-            padding: 40px;
-            background-color: #f5f0e1; /* Soft Tan */
+            font-family: Menlo, Consolas, monaco, monospace; 
+            background-color: #f5f0e1; /* Tan */
+            color: #2c3e50; /* Blue */
+            margin: 0;
+            padding: 0;
+            text-align: center;
         }
-        
-        /* Links and accents in Blue */
-        .back-btn { text-decoration: none; color: #1a4a7a; font-weight: bold; }
-        .back-btn:hover { text-decoration: underline; }
-        
+
+        /* --- HEADER / NAVBAR (Copied from index.html) --- */
+        header {
+            background-color: #ffffff;
+            padding: 5px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-logo img {
+            height: 80px;
+            width: 80px;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            transition: 0.3s;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #1a4a7a;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* --- CONTENT STYLING --- */
+        .content-wrapper {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+            text-align: left; /* Mission text looks better left-aligned */
+        }
+
+        h1, h2 { color: #1a4a7a; text-align: center; }
+
         .mission-box {
-            background-color: #ffffff; /* White box for readability */
-            border-left: 5px solid #1a4a7a; /* Blue accent bar */
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 0 10px 10px 0;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+            background-color: #ffffff;
+            border-left: 8px solid #1a4a7a;
+            padding: 30px;
+            margin: 40px 0;
+            border-radius: 0 15px 15px 0;
+            box-shadow: 2px 4px 15px rgba(0,0,0,0.05);
         }
 
-        .mission-box ul {
-          list-style-type: none; 
-          padding-left: 20px;
-        }
+        .mission-box ul { list-style-type: none; padding-left: 10px; }
+        .mission-box li::before { content: "🔹 "; }
 
-        /* Swapped the emoji to something clean, or keep your 🫰! */
-        .mission-box li::before {
-            content: "🔹"; 
-            margin-right: 10px;
-        }
-
+        /* --- TEAM GRID --- */
         .team-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
         }
 
         .member {
             background: #ffffff;
-            padding: 20px;
+            padding: 25px;
             border-radius: 15px;
             text-align: center;
-            border: 1px solid #dcd7c9; /* Subtle tan border */
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
         }
 
         .member img {
-            width: 120px;
-            height: 120px;
-            object-fit: cover;
+            width: 140px;
+            height: 140px;
+            object-fit: cover; /* Keeps faces from stretching */
+            aspect-ratio: 1/1;
             border-radius: 50%;
             margin-bottom: 15px;
-            border: 3px solid #1a4a7a; /* Blue ring around photos */
-        }  
+            border: 4px solid #1a4a7a;
+        }
 
-        h1, h2 { color: #1a4a7a; }
+        /* --- FOOTER (Copied from index.html) --- */
+        footer {
+            background-color: #1a4a7a;
+            color: #f5f0e1;
+            padding: 40px 20px;
+            margin-top: 80px;
+            text-align: left;
+        }
+        
+        .footer-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .footer-logo {
+            width: 160px;
+            height: 160px;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        .footer-links-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .footer-links-stack a { 
+            text-decoration: none; 
+            font-weight: bold; 
+            transition: 0.3s; 
+        }
+        
+        .contact-text-link { 
+            color: #f5f0e1; 
+            font-size: 1.5em; 
+            margin-bottom: 8px;
+            display: inline-block;
+        }
+        
+        .glow-link { 
+            color: #ffffff; 
+            font-size: 1.3em; 
+        }
+        
+        .glow-link:hover {
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.5);
+            transform: translateX(5px) scale(1.1);
+        }
+        
+        .copyright {
+            max-width: 1000px;
+            margin: 30px auto 0 auto;
+            font-size: 0.7em;
+            opacity: 0.6;
+        }
     </style>
 </head>
 <body>
 
-    <a href="index.html" class="back-btn">← Back to Home</a>
+    <header>
+        <a href="index.html" class="header-logo">
+            <img src="images/CODEC_transparent.png" alt="CODEC Home">
+        </a>
+        <div class="nav-links">
+            <a href="about_us.html">About Us</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact Us</a>
+        </div>  
+    </header>
 
-    <h1>About CODEC</h1>
-    <p>We are a community of creators, coders, and innovators.</p>
+    <div class="content-wrapper">
+        <h1>About CODEC</h1>
+        <p style="text-align: center; font-style: italic;">We are a community of creators, coders, and innovators.</p>
 
-    <div class="mission-box">
-      <h2>Our Mission</h2>
-    
-        <p><strong>CODEC</strong> stands for <strong>C</strong>ommunity of <strong>D</strong>iverse <strong>E</strong>mpowerment in <strong>C</strong>omputing.</p>
+        <div class="mission-box">
+            <h2>Our Mission</h2>
+            <p><strong>CODEC</strong> stands for <strong>C</strong>ommunity of <strong>D</strong>iverse <strong>E</strong>mpowerment in <strong>C</strong>omputing.</p>
+            <p>CODEC is a community space created to make tech accessible to everyone by sharing resources, supporting one another, and celebrating our diverse experiences in computing.</p>
+            <p>Our goal is to build a supportive community where:</p>
+            <ul>
+                <li>Everyone has access to the resources they need to thrive.</li>
+                <li>Respect for one another's backgrounds is key.</li>
+            </ul>
+        </div>
 
-        <p>We’re happy to have you here! CODEC is a community space created to make tech accessible to everyone by sharing resources, supporting one another, and celebrating our diverse experiences in computing.</p>
-
-        <p>Our goal is to build a supportive and inclusive community where:</p>
-    
-        <ul>
-          <li>Everyone has access to the resources they need to thrive.</li>
-          <li>Respect for one another’s backgrounds and unique experiences is key.</li>
-        </ul>
+        <h2>Meet the Team</h2>
+        <div class="team-grid">
+            <div class="member">
+                <img src="images/arianna.jpg" alt="Arianna">
+                <br>
+                <strong>Arianna Gonzalez</strong><br>
+                <span>President</span>
+            </div>
+            <div class="member">
+                <img src="images/kanec.jpg" alt="Kanec">
+                <br>
+                <strong>Kanec Olivares</strong><br>
+                <span>Vice President</span>
+            </div>
+            <div class="member">
+                <img src="images/mia.jpg" alt="Mia">
+                <br>
+                <strong>Mia Aburto</strong><br>
+                <span>External Board</span>
+            </div>
+            <div class="member">
+                <img src="images/henry.jpg" alt="Henry">
+                <br>
+                <strong>Chidubem Henry Adinna</strong><br>
+                <span>External Board</span>
+            </div>
+            <div class="member">
+                <img src="images/viviana.jpg" alt="Viviana">
+                <br>
+                <strong>Viviana Salazar</strong><br>
+                <span>Marketing Board</span>
+            </div>
+            <div class="member">
+                <img src="images/lizbeth.jpg" alt="Lizbeth">
+                <br>
+                <strong>Lizbeth Ramirez</strong><br>
+                <span>Internal Board</span>
+            </div>
+            <div class="member">
+                <img src="images/ivan.jpg" alt="Ivan">
+                <br>
+                <strong>Ivan Gonzalez</strong><br>
+                <span>Tech Lead</span>
+            </div>
+            <div class="member">
+                <img src="images/akriti.jpg" alt="Akriti">
+                <br>
+                <strong>Akriti Singh</strong><br>
+                <span>Tech Lead</span>
+            </div>
+        </div>
     </div>
 
-    <h2>Meet the Team</h2>
-    <div class="team-grid">
-        <div class="member">
-            <img src="arianna.jpg" alt="Arianna">
-            <br>
-            <strong>Arianna Gonzalez</strong><br>
-            <span>President</span>
+    <footer>
+        <div class="footer-content">
+            <a href="index.html">
+                <img src="images/CODEC.jpg" alt="CODEC Logo" class="footer-logo">
+            </a>
+            <div class="footer-links-stack">
+                <a href="contact.html" class="contact-text-link">Contact Us</a>
+                <a href="https://discord.gg/QSYSCFb" target="_blank" class="glow-link">Discord</a>
+                <a href="https://www.instagram.com/codec.uci/" target="_blank" class="glow-link">Instagram</a>
+            </div>
         </div>
-        <div class="member">
-            <img src="kanec.jpg" alt="Kanec">
-            <br>
-            <strong>Kanec Olivares</strong><br>
-            <span>Vice President</span>
-        </div>
-    </div>
+        <p class="copyright">© 2026 CODEC | Community of Diverse Empowerment in Computing</p>
+    </footer>
 
 </body>
 </html>
