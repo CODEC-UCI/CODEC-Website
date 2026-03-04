@@ -2,157 +2,11 @@
 <html>
 <head>
     <title>CODEC | Home</title>
-    <style>
-        /* Global Styles */
-        body { 
-            font-family: Menlo, Consolas, monaco, monospace; 
-            background-color: #f5f0e1; /* Tan */
-            color: #2c3e50; /* Blue */
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-      header {
-        background-color: #ffffff;
-        padding: 5px 40px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        position: sticky;
-        top: 0;
-        z-index: 100;
-    }
-    
-    .nav-links {
-        display: flex;
-        gap: 30px;
-    }
-
-    .nav-links a {
-        text-decoration: none;
-        color: #1a4a7a;
-        font-weight: bold;
-        transition: 0.3s;
-        margin-left: 0; 
-    }
-
-        .header-logo img {
-            height: 80px;
-            width: 80px;
-            aspect-ratio: 1/1;
-            object-fit: cover;
-            transition: 0.3s;
-        }
-
-        /* --- MAIN CONTENT --- */
-        .hero-section h1 { 
-            color: #1a4a7a; 
-            font-size: 4em;
-            margin-bottom: 10px; 
-        }
-        
-        .hero-section p {
-            font-size: 1em; 
-            max-width: 500px;
-            margin: 10px auto;
-        }
-
-        .watermark {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 400px;
-            opacity: 0.05;
-            z-index: -1;
-            pointer-events: none;
-        }
-
-        h1 { color: #1a4a7a; font-size: 3em; margin-bottom: 10px; }
-
-        /* --- FOOTER --- */
-        footer {
-            background-color: #1a4a7a;
-            color: #f5f0e1;
-            padding: 40px 20px;
-            margin-top: 50px;
-            text-align: left; /* Aligns the copyright and content to the left */
-        }
-        
-        .footer-content {
-            display: flex;
-            align-items: center; /* Centers items vertically */
-            gap: 40px;           /* Sets a specific distance from the logo */
-            max-width: 1000px;
-            margin: 0 auto;      /* Keeps the whole unit centered on the page */
-        }
-        
-        .footer-logo {
-            width: 160px;
-            height: 160px;
-            aspect-ratio: 1/1;
-            object-fit: cover;
-            border-radius: 10px;
-        }
-        
-        .footer-links-stack {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        
-        /* Base style for all footer links */
-        .footer-links-stack a {
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        
-        /* Contact Us link (plain tan/white) */
-        .contact-text-link {
-            color: #f5f0e1;
-            font-size: 1.1em;
-            margin-bottom: 5px;
-        }
-        
-        /* Discord & Instagram links (white with glow) */
-        .glow-link {
-            color: #ffffff;
-            font-size: 0.9em;
-        }
-        
-        .glow-link:hover {
-            color: #ffffff;
-            /* This creates the "Glow" effect */
-            text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.5);
-            transform: translateX(5px); /* Slight shift to the right on hover */
-        }
-        
-        .copyright {
-            max-width: 1000px;
-            margin: 30px auto 0 auto;
-            font-size: 0.7em;
-            opacity: 0.6;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <img src="logo.png" class="watermark" alt="">
-
-    <header>
-        <a href="index.html" class="header-logo">
-            <img src="CODEC_transparent.png" alt="CODEC Home">
-        </a>
-        
-        <div class="nav-links">
-            <a href="about_us.html">About Us</a>
-            <a href="events.html">Events</a>
-            <a href="contact.html">Contact Us</a>
-        </div>  
-    </header>
+    <img src="images/CODEC.jpg" class="watermark" alt="">
 
     <div class="hero-section">
         <h1>Welcome to CODEC</h1>
@@ -160,20 +14,6 @@
         <p style="font-style: italic;">Making tech accessible to everyone</p>
     </div>
 
-    <footer>
-        <div class="footer-content">
-            <a href="index.html">
-                <img src="CODEC.jpg" alt="CODEC Logo" class="footer-logo">
-            </a>
-    
-            <div class="footer-links-stack">
-                <a href="contact.html" class="contact-text-link">Contact Us</a>
-                <a href="https://discord.gg/QSYSCFb" target="_blank" class="glow-link">Discord</a>
-                <a href="https://www.instagram.com/codec.uci/" target="_blank" class="glow-link">Instagram</a>
-            </div>
-        </div>
-        <p class="copyright">© 2026 CODEC | Community of Diverse Empowerment in Computing</p>
-    </footer>
-
+    <script src="components.js"></script>
 </body>
 </html>
