@@ -1,0 +1,121 @@
+/* Global Styles */
+body { 
+    font-family: Menlo, Consolas, monaco, monospace; 
+    background-color: #f5f0e1; 
+    color: #2c3e50; 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* --- HEADER --- */
+header {
+    background-color: #ffffff;
+    padding: 5px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-logo img {
+    height: 80px;
+    width: 80px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1a4a7a;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #1a4a7a;
+    color: #f5f0e1;
+    padding: 50px 20px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center; 
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    width: 160px;
+    height: 160px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.footer-links-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-text-link {
+    color: #f5f0e1;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.glow-link {
+    color: #ffffff;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.glow-link:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.5);
+    transform: translateX(5px);
+}
+
+.copyright {
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+    font-size: 0.7em;
+    opacity: 0.6;
+}
+
+/* --- PAGE SPECIFIC CONTENT --- */
+.hero-section { padding: 120px 20px; }
+.hero-section h1 { color: #1a4a7a; font-size: 4em; }
+
+.content-wrapper { max-width: 900px; margin: 60px auto; text-align: left; padding: 0 20px; }
+.mission-box { background: #fff; border-left: 8px solid #1a4a7a; padding: 30px; border-radius: 0 15px 15px 0; }
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.member { background: #fff; padding: 20px; border-radius: 15px; text-align: center; }
+.member img { width: 140px; height: 140px; object-fit: cover; border-radius: 50%; border: 4px solid #1a4a7a; }
+
+.watermark {
+    position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 400px; opacity: 0.05; z-index: -1; pointer-events: none;
+}
