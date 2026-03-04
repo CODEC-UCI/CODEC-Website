@@ -30,6 +30,20 @@ header {
     transition: 0.3s;
 }
 
+.header-glow {
+    color: #1a4a7a; /* Dark Blue so it shows up on the white header */
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.header-glow:hover {
+    /* A blue glow instead of a white one */
+    text-shadow: 0 0 10px rgba(26, 74, 122, 0.3); 
+    color: #1a4a7a;
+    transform: scale(1.1);
+}
+
 .nav-links {
     display: flex;
     gap: 30px;
