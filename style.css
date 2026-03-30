@@ -101,7 +101,6 @@ footer {
 
 .glow-link:hover {
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.5);
-    transform: translateX(5px);
 }
 
 .copyright {
@@ -118,18 +117,96 @@ footer {
 .content-wrapper { max-width: 900px; margin: 60px auto; text-align: left; padding: 0 20px; }
 .mission-box { background: #fff; border-left: 8px solid #1a4a7a; padding: 30px; border-radius: 0 15px 15px 0; }
 
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-}
-
-.member { background: #fff; padding: 20px; border-radius: 15px; text-align: center; }
-.member img { width: 140px; height: 140px; object-fit: cover; border-radius: 50%; border: 4px solid #1a4a7a; }
-
 .watermark {
     position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
     width: 400px; opacity: 0.05; z-index: -1; pointer-events: none;
+}
+
+/* --- ABOUT PAGE SPECIFIC --- */
+.about-page {
+    max-width: 1000px; /* Made the page wider as requested */
+}
+
+.main-title {
+    font-size: 3.5em; /* Larger title */
+    margin-bottom: 20px;
+}
+
+.intro-section {
+    font-size: 1.2em; /* Larger mission text */
+    line-height: 1.8;
+    margin-bottom: 60px;
+}
+
+.definition {
+    font-size: 1.4em;
+    color: #1a4a7a;
+}
+
+.section-heading {
+    text-align: left; /* Left aligned as requested */
+    font-size: 2.5em;
+    border-bottom: 3px solid #1a4a7a;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+/* --- STACKED TEAM LAYOUT --- */
+.team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Space between members */
+}
+
+.member-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    text-align: left;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 2px 4px 15px rgba(0,0,0,0.05);
+}
+
+.member-row img {
+    width: 250px; /* Large photo size */
+    height: 300px; /* Rectangular like WICS */
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #1a4a7a;
+}
+
+.member-info h3 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #1a4a7a;
+}
+
+.role {
+    font-weight: bold;
+    color: #d35400; /* Distinct color for the role */
+    margin: 5px 0 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.bio {
+    line-height: 1.6;
+    font-size: 1.05em;
+}
+
+/* Responsive adjustment for Mobile */
+@media (max-width: 768px) {
+    .member-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .member-row img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* --- BLOG / EVENTS STYLES --- */
