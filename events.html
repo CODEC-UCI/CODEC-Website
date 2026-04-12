@@ -8,32 +8,54 @@
 
     <div class="content-wrapper">
         <h1>Meeting Blog</h1>
-        <p style="text-align: center; font-style: italic;">Check out what we've been up to in our recent gatherings.</p>
+        <p style="text-align: center; font-style: italic;">Check out what we've been up to.</p>
 
-        <div class="blog-post">
-            <div class="post-header">
-                <span class="date">October 10, 2025</span> 
-                <span class="tag">Workshop</span>
-            </div>
-            <h2>Intro to Web Development</h2>
-            <p>Today we kicked off our first coding session! We walked through the basics of HTML and started building our club's website on GitHub Pages.</p>
-            
-            <strong>Key Takeaways:</strong>
-            <ul>
-                <li>Setting up a GitHub repository.</li>
-                <li>Understanding the difference between <code>head</code> and <code>body</code>.</li>
-            </ul>
-        </div>
-
-        <div class="blog-post">
-            <div class="post-header">
-                <span class="date">October 3, 2025</span> 
-                <span class="tag">Social</span>
-            </div>
-            <h2>Welcome Mixer</h2>
-            <p>Our first official meetup! We spent time getting to know each other and discussing our goals for CODEC this semester.</p>
+        <div id="events-list" class="events-grid" aria-live="polite">
+            <!-- Event cards will be populated here from events/events.json -->
         </div>
     </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        const list = document.getElementById('events-list');
+        fetch('events/events.json')
+            .then(r => r.json())
+            .then(events => {
+                if(!Array.isArray(events) || events.length === 0){
+                    list.innerHTML = '<p>No events found.</p>';
+                    return;
+                }
+                events.forEach(ev => {
+                    const card = document.createElement('article');
+                    card.className = 'event-card';
+                    card.innerHTML = `
+                        <div class="card-inner">
+                            <div class="post-header">
+                                <span class="date">${ev.date}</span>
+                                ${ev.tag ? `<span class="tag">${ev.tag}</span>` : ''}
+                            </div>
+                            <h2>${ev.title}</h2>
+                            <p class="summary">${ev.summary}</p>
+                        </div>
+                        <div class="overlay">
+                            <a class="details-btn" href="events/${ev.file}">See details</a>
+                        </div>
+                    `;
+
+                    card.addEventListener('click', function(e){
+                        if(e.target.closest('.details-btn')) return; // allow link clicks
+                        card.classList.toggle('dimmed');
+                    });
+
+                    list.appendChild(card);
+                });
+            })
+            .catch(err => {
+                console.error(err);
+                list.innerHTML = '<p>Could not load events.</p>';
+            });
+    });
+    </script>
 
     <script src="components.js"></script>
 </body>

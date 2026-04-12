@@ -1,0 +1,27 @@
+[
+  {
+    "id": "59cd0523-6210-4cd7-907b-718655729dc1",
+    "title": "Spring Showcase",
+    "date": "April 21, 2026",
+    "summary": "Members demoed projects from the spring quarter and shared tips on prototyping.",
+    "tag": "Showcase"
+  },
+  {
+    "id": "1fcae602-937d-4690-a299-bb9c389976e3",
+    "title": "April Session (Legacy)",
+    "date": "April 21, 2025",
+    "summary": "A previous session with small-group workshops and pair programming.",
+    "tag": "Workshop",
+    "content": "",
+    "attachments": [
+      {
+        "type": "link",
+        "href": ""
+      },
+      {
+        "type": "jpg",
+        "filename": ""
+      }
+    ]
+  }
+]
