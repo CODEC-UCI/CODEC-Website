@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CODEC | Events</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -37,13 +39,9 @@
                             <h2>${ev.title}</h2>
                             <p class="summary">${ev.summary}</p>
                         </div>
-                        <div class="overlay">
-                            <a class="details-btn" href="event-detail.html?id=${ev.id}}">See details</a>
-                        </div>
                     `;
 
-                    card.addEventListener('click', function(e){
-                        if(e.target.closest('.details-btn')) return; // allow link clicks
+                    card.addEventListener('click', function(){
                         card.classList.toggle('dimmed');
                     });
 
@@ -57,6 +55,7 @@
     });
     </script>
 
-    <script src="components.js"></script>
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
 </body>
 </html>

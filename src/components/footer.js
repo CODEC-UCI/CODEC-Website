@@ -1,17 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const headerHTML = `
-    <header>
-        <a href="index.html" class="header-logo">
-            <img src="images/CODEC_transparent.png" alt="CODEC Home">
-        </a>
-        <div class="nav-links">
-            <a href="about_us.html" class="header-glow">About Us</a>
-            <a href="events.html" class="header-glow">Events</a>
-            <a href="contact.html" class="header-glow">Contact Us</a>
-        </div>
-    </header>
-    `;
-
     const footerHTML = `
     <footer>
         <div class="footer-content">
@@ -19,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <img src="images/CODEC.jpg" alt="CODEC Logo" class="footer-logo">
             </a>
             <div class="footer-links-stack">
-                <a href="contact.html" class="contact-text-link">Contact Us</a>
+                <a href="contact-us.html" class="contact-text-link">Contact Us</a>
                 <a href="https://discord.gg/QSYSCFb" target="_blank" class="glow-link">Discord</a>
                 <a href="https://www.instagram.com/codec.uci/" target="_blank" class="glow-link">Instagram</a>
             </div>
@@ -28,6 +15,5 @@ document.addEventListener("DOMContentLoaded", function() {
     </footer>
     `;
 
-    document.body.insertAdjacentHTML('afterbegin', headerHTML);
     document.body.insertAdjacentHTML('beforeend', footerHTML);
 });

@@ -11,9 +11,6 @@ export function card(ev) {
                             <h2>${ev.title}</h2>
                             <p class="summary">${ev.summary}</p>
                         </div>
-                        <div class="overlay">
-                            <a class="details-btn" href="event-detail?id=${ev.id}}">See details</a>
-                        </div>
     `
   )
 }
