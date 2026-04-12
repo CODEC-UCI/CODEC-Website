@@ -12,44 +12,59 @@
   </div>
 
   <div class="cw">
-    <h1>Content Details</h1>
+    <h1>Event Details</h1>
     <div id="event-content">
     </div>
   </div>
 
   <script>
     document.addEventListener('DOMContentLoaded', async function() {
-      // 1. Setup (find HTML element to write to + load in the id from query params)
       const contentRef = document.getElementById('event-content');
       const params = new URLSearchParams(document.location.search);
-      const eventId = parseInt(params.get('id'));
+      const eventId = params.get('id');
 
-      // 2. fetch / load in the events + lookup via id 
-      // fallback in case of any error
-      let eventContent = '<p>Could not load events.</p>';
-      const events = await fetch('events/events.json').then(r => r.json()).catch(err=> console.log(err))
-      const currentEvent = events.find((ev) => ev.id === eventId);
+      let eventContent = '<p>Could not load event details.</p>';
+      const events = await fetch('events.json')
+        .then(r => r.json())
+        .catch(err => {
+          console.error(err);
+          return [];
+        });
 
-      // update content w/ currentEvent details
+      const currentEvent = Array.isArray(events)
+        ? events.find(ev => String(ev.id) === eventId)
+        : undefined;
+
       if (currentEvent !== undefined) {
-        const { content, attachments, title, date, tag } = currentEvent;
+        const { content, attachments = [], title, date, tag } = currentEvent;
 
-        const picturesList = `
-          <li>
-            ${attachments.filter((attachment) => attachemnt.type === 'jpg').map((img) => 
-              `<image src="/images/${filename}">`
-          )}
-          </li>
-        `;
+        const imageItems = attachments
+          .filter(att => att.type === 'jpg' && att.filename)
+          .map(att => `<li><img src="images/${att.filename}" alt="${title} image"></li>`)
+          .join('');
 
-        const ytLinks = ``;
+        const linkItems = attachments
+          .filter(att => att.type === 'link' && att.href)
+          .map(att => `<li><a href="${att.href}" target="_blank" rel="noopener noreferrer">${att.href}</a></li>`)
+          .join('');
 
         eventContent = `
-          ${picturesList}
-        `
+          <article class="event-detail-card">
+            <header>
+              <h1>${title}</h1>
+              <p class="event-meta">${date}${tag ? ` · ${tag}` : ''}</p>
+            </header>
+            <section class="event-body">
+              <p>${content || ''}</p>
+            </section>
+            ${imageItems ? `<section class="event-images"><h2>Images</h2><ul>${imageItems}</ul></section>` : ''}
+            ${linkItems ? `<section class="event-links"><h2>Links</h2><ul>${linkItems}</ul></section>` : ''}
+          </article>
+        `;
+      } else {
+        eventContent = '<p>Event not found. Please check the link and try again.</p>';
       }
 
-      // 3. write the contents to the HTML
       contentRef.innerHTML = eventContent;
     })
   </script>

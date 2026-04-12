@@ -42,7 +42,7 @@
                     `;
 
                     card.addEventListener('click', function(){
-                        card.classList.toggle('dimmed');
+                        window.location.href = `event-detail.html?id=${encodeURIComponent(ev.id)}`;
                     });
 
                     list.appendChild(card);
