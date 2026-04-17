@@ -258,3 +258,96 @@ footer {
     border-radius: 4px;
     color: #1a4a7a;
 }
+
+/* --- EVENTS GRID / CARD STYLES --- */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.event-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    position: relative;
+    border-bottom: 8px solid #1a4a7a;
+    box-shadow: 2px 4px 15px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+/* Combine lift and dim on hover for cards */
+.event-card:hover { transform: translateY(-6px); }
+
+.event-card .post-header { margin-bottom: 8px; display:flex; align-items:center; gap:10px; }
+.event-card .summary { color: #34495e; }
+
+/* Hover-only transparency: make card semi-transparent on hover
+   and keep clicks working (no overlay capturing pointer events) */
+.event-card:hover { opacity: 0.6; }
+
+@media (max-width: 480px) {
+    .events-grid { gap: 18px; }
+}
+
+/* --- CONTACT US PAGE STYLES --- */
+.glow-link-contact {
+    color: #000000;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+
+.social-links li {
+    display: inline-flex;
+}
+
+.social-link {
+    display: inline-flex;
+    width: 56px;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: #ffffff;
+    border: 2px solid #1a4a7a;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.social-link img {
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.social-link:hover,
+.social-link:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 480px) {
+    .social-links {
+        justify-content: center;
+        gap: 14px;
+    }
+    .social-link {
+        width: 48px;
+        height: 48px;
+    }
+    .social-link img {
+        max-width: 24px;
+        max-height: 24px;
+    }
+}

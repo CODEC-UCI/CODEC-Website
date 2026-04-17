@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="content-wrapper">
+
+  </div>
+
+  <div class="cw">
+    <h1>Event Details</h1>
+    <div id="event-content">
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', async function() {
+      // 1. Setup (find HTML element to write to + load in the id from query params)
+      const contentRef = document.getElementById('event-content');
+      const params = new URLSearchParams(document.location.search);
+      const eventId = params.get('id');
+
+      // 2. fetch / load in the events + lookup via id 
+      let eventContent = '<p>Could not load event details.</p>';
+      const events = await fetch('events.json')
+        .then(r => r.json())
+        // fallback in case of any error
+        .catch(err => {
+          console.error(err);
+          return [];
+        });
+
+      const currentEvent = Array.isArray(events)
+        ? events.find(ev => String(ev.id) === eventId)
+        : undefined;
+      
+      // update content w/ currentEvent details
+      if (currentEvent !== undefined) {
+        const { content, attachments = [], title, date, tag } = currentEvent;
+        
+        // get all images to display in different sections
+        const imagesItems = attachments.filter(att => att.type === 'jpg' && att.filename);
+  
+        // "hero" images is first on the list in the json (used as the banner image)
+        const heroImage = imagesItems[0];
+        const heroHtml = heroImage 
+          ? `<div class="event-hero"><img src="images/event-images/${heroImage.filename}" alt="${title} banner"></div>` 
+          : '';
+
+        // rest of the images go in the gallery
+        const galleryImages = imagesItems.slice(1);
+        const galleryHtml = galleryImages.length > 0 
+          ? `<section class="event-gallery">
+              <h2>Photo Gallery</h2>
+              <div class="gallery-grid">
+                ${galleryImages.map(img => `<img src="images/event-images/${img.filename}" alt="Gallery image">`).join('')}
+              </div>
+            </section>` 
+          : '';
+
+        // generate html for links 
+        const linkItems = attachments
+          .filter(att => att.type === 'link' && att.href)
+          .map(att => `<li><a href="${att.href}" target="_blank" rel="noopener noreferrer">${att.href}</a></li>`)
+          .join('');
+        
+        // write main content of the event, along with images and links sections if they exist
+        eventContent = `
+          <article class="event-detail-card">
+            ${heroHtml}
+            
+              <header>
+                <h1>${title}</h1>
+                <p class="event-meta">${date}${tag ? ` · ${tag}` : ''}</p>
+              </header>
+
+              <section class="event-body">
+                <p>${content || ''}</p>
+              </section>
+
+              ${galleryHtml}
+
+              ${linkItems ? `<section class="event-links"><h2>Links</h2><ul>${linkItems}</ul></section>` : ''}
+          </article>
+        `;
+
+      } else {
+        eventContent = '<p>Event not found. Please check the link and try again.</p>';
+      }
+
+      // 3. write the contents to the HTML to display on the page
+      contentRef.innerHTML = eventContent;
+    })
+  </script>
+
+  <script src="components/header.js"></script>
+  <script src="components/footer.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEC | Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <h1>Meeting Blog</h1>
+        <p style="text-align: center; font-style: italic;">Check out what we've been up to.</p>
+
+        <div id="events-list" class="events-grid" aria-live="polite">
+            <!-- Event cards will be populated here from events.json -->
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        // 1. load events into events-list container + render them as cards on the page
+        const list = document.getElementById('events-list');
+        fetch('events.json')
+            .then(r => r.json())
+            .then(events => {
+                if(!Array.isArray(events) || events.length === 0){
+                    list.innerHTML = '<p>No events found.</p>';
+                    return;
+                }
+                // 2. generate an event card for each event
+                // each card has date, tag, and summary info
+                events.forEach(ev => {
+                    const card = document.createElement('article');
+                    card.className = 'event-card';
+                    card.innerHTML = `
+                        <div class="card-inner">
+                            <div class="post-header">
+                                <span class="date">${ev.date}</span>
+                                ${ev.tag ? `<span class="tag">${ev.tag}</span>` : ''}
+                            </div>
+                            <h2>${ev.title}</h2>
+                            <p class="summary">${ev.summary}</p>
+                        </div>
+                    `;
+                    
+                    // 3. add click handler to each card to navigate to the event-detail page for more info
+                    // give unique id
+                    card.addEventListener('click', function(){
+                        window.location.href = `event-detail.html?id=${encodeURIComponent(ev.id)}`;
+                    });
+                    
+                    // add card to the list container
+                    list.appendChild(card);
+                });
+            })
+            .catch(err => {
+                console.error(err);
+                list.innerHTML = '<p>Could not load events.</p>';
+            });
+    });
+    </script>
+
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+</body>
+</html>

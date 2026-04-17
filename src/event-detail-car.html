@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="content-wrapper">
+
+  </div>
+
+  <div class="cw">
+    <h1>Event Details</h1>
+    <div id="event-content">
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', async function() {
+      // 1. Setup (find HTML element to write to + load in the id from query params)
+      const contentRef = document.getElementById('event-content');
+      const params = new URLSearchParams(document.location.search);
+      const eventId = parseInt(params.get('id'));
+
+      // 2. fetch / load in the events + lookup via id 
+      // fallback in case of any error
+      let eventContent = '<p>Could not load event details.</p>';
+      const events = await fetch('events.json').then(r => r.json()).catch(err=> console.log(err))
+      const currentEvent = events.find((ev) => ev.id === eventId);
+
+      // update content w/ currentEvent details
+      if (currentEvent !== undefined) {
+        const { content, attachments, title, date, tag } = currentEvent;
+
+        const picturesList = `
+          <li>
+            ${attachments.filter((attachment) => attachemnt.type === 'jpg').map((img) => 
+              `<image src="/images/${filename}">`
+          )}
+          </li>
+        `;
+
+        const ytLinks = ``;
+
+        eventContent = `
+          ${picturesList}
+        `
+      }
+
+      // 3. write the contents to the HTML
+      contentRef.innerHTML = eventContent;
+    })
+  </script>
+
+  <script src="components/header.js"></script>
+  <script src="components/footer.js"></script>
+  
+</body>
+</html>
