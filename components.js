@@ -2,11 +2,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const headerHTML = `
     <header>
         <a href="index.html" class="header-logo">
-            <img src="images/CODEC_transparent.png" alt="CODEC Home">
+            <img src="images/OFFICAL_LOGO.png" alt="CODEC Home">
         </a>
         <div class="nav-links">
             <a href="about_us.html" class="header-glow">About Us</a>
             <a href="events.html" class="header-glow">Events</a>
+            <a href="https://codec.clotho.ics.uci.edu/" class="header-glow">Club Hub</a>
             <a href="contact.html" class="header-glow">Contact Us</a>
         </div>
     </header>
