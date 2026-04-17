@@ -42,12 +42,27 @@
       if (currentEvent !== undefined) {
         const { content, attachments = [], title, date, tag } = currentEvent;
         
-        // generate html for images and links, if any exist 
-        const imageItems = attachments
-          .filter(att => att.type === 'jpg' && att.filename)
-          .map(att => `<li><img src="images/${att.filename}" alt="${title} image"></li>`)
-          .join('');
+        // get all images to display in different sections
+        const imagesItems = attachments.filter(att => att.type === 'jpg' && att.filename);
+  
+        // "hero" images is first on the list in the json (used as the banner image)
+        const heroImage = imagesItems[0];
+        const heroHtml = heroImage 
+          ? `<div class="event-hero"><img src="images/event-images/${heroImage.filename}" alt="${title} banner"></div>` 
+          : '';
 
+        // rest of the images go in the gallery
+        const galleryImages = imagesItems.slice(1);
+        const galleryHtml = galleryImages.length > 0 
+          ? `<section class="event-gallery">
+              <h2>Photo Gallery</h2>
+              <div class="gallery-grid">
+                ${galleryImages.map(img => `<img src="images/event-images/${img.filename}" alt="Gallery image">`).join('')}
+              </div>
+            </section>` 
+          : '';
+
+        // generate html for links 
         const linkItems = attachments
           .filter(att => att.type === 'link' && att.href)
           .map(att => `<li><a href="${att.href}" target="_blank" rel="noopener noreferrer">${att.href}</a></li>`)
@@ -56,17 +71,23 @@
         // write main content of the event, along with images and links sections if they exist
         eventContent = `
           <article class="event-detail-card">
-            <header>
-              <h1>${title}</h1>
-              <p class="event-meta">${date}${tag ? ` · ${tag}` : ''}</p>
-            </header>
-            <section class="event-body">
-              <p>${content || ''}</p>
-            </section>
-            ${imageItems ? `<section class="event-images"><h2>Images</h2><ul>${imageItems}</ul></section>` : ''}
-            ${linkItems ? `<section class="event-links"><h2>Links</h2><ul>${linkItems}</ul></section>` : ''}
+            ${heroHtml}
+            
+              <header>
+                <h1>${title}</h1>
+                <p class="event-meta">${date}${tag ? ` · ${tag}` : ''}</p>
+              </header>
+
+              <section class="event-body">
+                <p>${content || ''}</p>
+              </section>
+
+              ${galleryHtml}
+
+              ${linkItems ? `<section class="event-links"><h2>Links</h2><ul>${linkItems}</ul></section>` : ''}
           </article>
         `;
+
       } else {
         eventContent = '<p>Event not found. Please check the link and try again.</p>';
       }

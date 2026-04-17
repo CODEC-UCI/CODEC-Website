@@ -18,7 +18,11 @@
       },
       {
         "type": "jpg",
-        "filename": ""
+        "filename": "game-night-social-1.jpg"
+      },
+      {
+        "type": "jpg",
+        "filename": "game-night-social-2.jpg"
       }
     ]
   },
@@ -32,7 +36,7 @@
         "Highlights",
         "Of the event"
       ],
-      "tag": "What kind of event it was (e.g. social, tech talk, etc.)",
+      "tag": "Social/Academic/Workshop/etc.)",
       "content": "Full blog style content.",
       "attachments": [
         {
