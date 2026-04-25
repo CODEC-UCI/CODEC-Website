@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const headerHTML = `
     <header>
         <a href="index.html" class="header-logo">
-            <img src="images/CODEC-transparent.png" alt="CODEC Home">
+            <img src="images/OFFICIAL_LOGO.png" alt="CODEC Home">
         </a>
         <div class="nav-links">
             <a href="about-us.html" class="header-glow">About Us</a>
