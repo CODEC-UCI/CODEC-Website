@@ -18,6 +18,7 @@
     --cream: #FDF9EE;
     --light-blue: #B2C3D7;
     --dark-blue: #1751AA;
+    --darker-blue: #042C53;
 }
 
 /* --- GLOBAL STYLES --- */
@@ -210,7 +211,7 @@ footer {
 
 .about-title {
     font-size: 2rem;
-    color: #042C53;
+    color: var(--darker-blue);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin: 0 0 0.4rem;
@@ -218,7 +219,7 @@ footer {
 
 .about-subtitle {
     font-family: 'open-sauce';
-    color: var(--dark-blue);
+    color: var(--darker-blue);
     margin: 0 0 2.5rem;
 }
 
@@ -239,7 +240,7 @@ footer {
 
 .about-card h3 {
     font-size: 1rem;
-    color: #042C53;
+    color: var(--darker-blue);
     text-transform: uppercase;
     letter-spacing: 0.03em;
     margin: 0 0 0.5rem;
@@ -273,13 +274,19 @@ footer {
 
 .nav-button {
     display: inline-block;
-    background-color: #042C53;
+    background-color: var(--darker-blue);
     color: #ffffff;
     text-decoration: none;
     padding: 0.65rem 1.75rem;
     border-radius: 999px;
     font-size: 0.95rem;
     margin-top: 1.5rem;
+    animation: bounce 1.2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(4px); }
 }
 
 .nav-button:hover {
