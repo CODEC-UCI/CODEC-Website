@@ -1,0 +1,45 @@
+/* --- HEADER --- */
+header {
+    background-color: var(--cream);
+    padding: 5px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-logo img {
+    background-color: transparent !important;
+    height: 80px;
+    width: 80px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.header-glow {
+    color: var(--dark-blue);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header-glow:hover {
+    color: var(--light-blue)
+}
+
+.nav-links {
+    font-family: 'open-sauce';
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-weight: bold;
+    transition: 0.3s;
+}

@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     <footer>
         <div class="footer-content">
             <a href="index.html">
-                <img src="images/CODEC.jpg" alt="CODEC Logo" class="footer-logo">
+                <img src="images/logos/CODEC.jpg" alt="CODEC Logo" class="footer-logo">
             </a>
             <div class="footer-links-stack">
                 <a href="contact-us.html" class="contact-text-link">Contact Us</a>

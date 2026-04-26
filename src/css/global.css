@@ -1,0 +1,43 @@
+/* --- FONTS --- */
+@font-face {
+    font-family: "intro-rust";
+    src: url("../fonts/IntroRust.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open-sauce';       
+    src: url('../fonts/OpenSauceOne-Medium.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open-sauce-light';       
+    src: url('../fonts/OpenSauceOne-Light.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* --- COLOR PALETTE --- */
+:root {
+    --cream: #FDF9EE;
+    --light-blue: #B2C3D7;
+    --dark-blue: #1751AA;
+    --darker-blue: #042C53;
+}
+
+/* --- GLOBAL STYLES --- */
+body { 
+    font-family: "intro-rust", "open-sauce", sans-serif;
+    background-color: var(--cream); 
+    color: var(--dark-blue); 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}

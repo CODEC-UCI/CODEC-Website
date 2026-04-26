@@ -1,0 +1,60 @@
+/* --- CONTACT PAGE STYLES --- */
+
+.glow-link-contact {
+    color: #000000;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+
+.social-links li {
+    display: inline-flex;
+}
+
+.social-link {
+    display: inline-flex;
+    width: 56px;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: var(--cream);
+    border: 2px solid var(--dark-blue);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.social-link img {
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.social-link:hover,
+.social-link:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 480px) {
+    .social-links {
+        justify-content: center;
+        gap: 14px;
+    }
+    .social-link {
+        width: 48px;
+        height: 48px;
+    }
+    .social-link img {
+        max-width: 24px;
+        max-height: 24px;
+    }
+}

@@ -1,5 +1,3 @@
-
-
 export function card(ev) {
   return (
     `
