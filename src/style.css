@@ -40,7 +40,7 @@ body {
 
 /* --- HEADER --- */
 header {
-    background-color: var(--cream);
+    background-color: #ffffff;
     padding: 5px 40px;
     display: flex;
     justify-content: space-between;
