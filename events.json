@@ -1,47 +1,32 @@
 [
   {
-    "id": "1fcae602-937d-4690-a299-bb9c389976e3",
+    "id": "04212026-game-night-social",
     "title": "Game Night Social",
     "date": "April 21, 2026",
     "summary": "Meet and play games with fellow members + Meet the board!",
-    "tag": "Social",
+    "tag": [
+      "Social",
+      "Fun and Games!"
+    ],
     "content": "On April 21, 2026, CODEC hosted our first event for Spring Quarter: a Game Night Social. The event was designed to foster community and provide an opportunity for members to connect in a fun and relaxed environment. Attendees enjoyed a variety of games. The event also featured a 'Meet the Board' segment where members had the chance to interact with the CODEC leadership team and learn more about upcoming events. Overall, the Game Night Social was a great success, bringing together members from different backgrounds and creating lasting memories.",
     "images": [
       {
-        "filename": "game-night-social-1.jpg"
-      },
-      {
-        "filename": "game-night-social-1.jpg"
-      },
-      {
         "filename": "game-night-social-2.jpg"
+      },
+      {
+        "filename": "nuggets.jpeg"
+      },
+      {
+        "filename": "whar.jpg"
       }
     ],
     "links": [
       {
-        "href": "https://www.instagram.com/p/1234567890/"
+        "href": "https://en.wikipedia.org/wiki/IRC"
       },
       {
-        "href": "https://www.instagram.com/p/0987654321/"
+        "href": "https://en.wikipedia.org/wiki/Main_Page"
       }
     ]
-  },
-    {
-      "id": "2fcae602-937d-4690-a299-bb9c389976e3",
-      "title": "Title",
-      "date": "Month Day, Year",
-      "summary": "Short Summary",
-      "tag": "Social/Academic/Workshop/etc.",
-      "content": "Full blog style content.",
-      "images": [
-        {
-          "filename": ""
-        }
-      ],
-      "links": [
-        {
-          "href": ""
-        }
-      ]
-    }
+  }
 ]
