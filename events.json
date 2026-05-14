@@ -1,5 +1,25 @@
 [
   {
+    "id": "05052026-how-to-start-a-personal-project",
+    "title": "How to Start a Personal Project",
+    "date": "May 05, 2026",
+    "summary": "Learn how to start your own personal project with the board!",
+    "tag": [
+      "Workshop"
+    ],
+    "content": "On May 5, 2026, CODEC hosted a \"How to Start a Personal Project\" workshop. Various baord members with diverse expereinces shared their insights on how they started their personal projects, the tools they used, and worked hands-on with general members to help kick start each members' own project. Members worked in groups to brainstorm real problems and were given the opportunity to present their proposed solutions. Throughout the workshop, members learned how to break down their ideas using a Minimum Viable Product (MVP) approach, create interface designs using Figma, and develop a simple tech stack that met the need of their projects.",
+    "images": [
+      {
+        "filename": ""
+      }
+    ],
+    "links": [
+      {
+        "href": ""
+      }
+    ]
+  },
+  {
     "id": "04212026-game-night-social",
     "title": "Game Night Social",
     "date": "April 21, 2026",
