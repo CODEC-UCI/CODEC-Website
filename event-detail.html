@@ -102,7 +102,7 @@
             
               <div class="event-header">
                 <h1>${title}</h1>
-                <p class="event-meta">${date}${tag ? ` · ${tag}` : ''}</p>
+                <p class="event-meta">${date}${tag ? ` · ${tag.split(',').map(t => t.trim()).join(' · ')}` : ''}</p>
               </div>
 
               <section class="event-body">
