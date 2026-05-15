@@ -58,6 +58,11 @@
             </div>` 
           : '';
 
+        // format tags
+        const formattedTags = Array.isArray(tag) && tag.length > 0
+          ? tag.join(' / ') 
+          : '';
+
         // rest of the images go in the gallery
         const galleryImages = imagesItems.slice(1);
         let galleryHtml = '';
@@ -94,7 +99,7 @@
             </li>
           `)
           .join('');
-        
+     
         // write main content of the event, along with images and links sections if they exist
         eventContent = `
           <article class="event-detail-card">
@@ -102,7 +107,7 @@
             
               <div class="event-header">
                 <h1>${title}</h1>
-                <p class="event-meta">${date}${tag ? ` · ${tag.split(',').map(t => t.trim()).join(' · ')}` : ''}</p>
+                <p class="event-meta">${date}${formattedTags ? ` · ${formattedTags}` : ''}</p>
               </div>
 
               <section class="event-body">

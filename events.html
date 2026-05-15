@@ -41,7 +41,7 @@
                         <div class="card-inner">
                             <div class="post-header">
                                 <span class="date">${ev.date}</span>
-                                ${ev.tag ? `<span class="tag">${ev.tag}</span>` : ''}
+                                ${Array.isArray(ev.tag) ? ev.tag.map(t => `<span class="tag">${t}</span>`).join(' ') : ''}
                             </div>
                             <h2>${ev.title}</h2>
                             <p class="summary">${ev.summary}</p>
