@@ -15,14 +15,31 @@
         <div class="hero-text">
             <img src="images/logos/WELCOME-CODEC-LOGO.png" alt="Welcome to CODEC" class="hero-logo">
             <p class="hero-subtitle">Community of Diverse Empowerment in Computing</p>
-            <a href="#about" class="nav-button">Learn More <span>↓</span></a>
+            <a href="#scroll-target" class="nav-button">Learn More <span>↓</span></a>
         </div>
         <div class="hero-image">
             <img src="images/board/homepage-board.png" alt="CODEC community">
         </div>
     </div>
 
-    <div id="about" class="about-section">
+    <div id="scroll-target" style="position: relative; top: -60px;"></div>
+
+    <div class="content-wrapper" style="margin-top: 50px; margin-bottom: 50px;">
+        <h2 style="text-align: center; color: #1a4a7a; margin-bottom: 10px;">Event Gallery</h2>
+        <div class="card-slider-container">
+            <div class="slider-viewport" id="home-middle-slider">
+                <div class="slider-card"><img src="images/event-images/google_panel_event.jpg" alt="Google Panel Event group picture."></div>
+                <div class="slider-card"><img src="images/event-images/event1.jpg" alt="CODEC Introductory event group picture."></div>
+                <div class="slider-card"><img src="images/event-images/board_at_bjs.jpg" alt="Board social at BJ's."></div>
+                <div class="slider-card"><img src="images/event-images/els_tour_1.jpg" alt="Edwards Lifesciences Tour 2025 group picture."></div>
+                <div class="slider-card"><img src="images/event-images/board_picnic.jpg" alt="Board picnic social."></div>
+                <div class="slider-card"><img src="images/event-images/els_tour_2.jpg" alt="Edwards Lifesciences Tour 2026 group picture."></div>
+            </div>
+            <div class="slider-controls" id="home-middle-dots"></div>
+        </div>
+    </div>
+
+    <div class="about-section">
         <h2 class="about-title">Who We Are</h2>
         <p class="about-subtitle">Community of Diverse Empowerment in Computing</p>
         <div class="about-cards">
@@ -63,6 +80,106 @@
             </div>
         </div>
     </div>
+
+    <!-- For the image carousel -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        setupInteractiveAutoSlider('home-middle-slider');
+    });
+
+    function setupInteractiveAutoSlider(viewportId) {
+        const viewport = document.getElementById(viewportId);
+        if (!viewport) return;
+        
+        const cards = Array.from(viewport.querySelectorAll('.slider-card'));
+        let currentIndex = 0;
+        let slideTimer = null; // Stash our auto-slide interval ID here
+
+        if (cards.length === 0) return;
+
+        // 1. Core Slider Engine
+        function updateSlider(targetIndex) {
+            currentIndex = targetIndex;
+            
+            cards.forEach(card => {
+                card.classList.remove('active-slide', 'prev-slide', 'next-slide');
+            });
+
+            const prevIdx = (currentIndex - 1 + cards.length) % cards.length;
+            const nextIdx = (currentIndex + 1) % cards.length;
+
+            cards[currentIndex].classList.add('active-slide');
+            cards[prevIdx].classList.add('prev-slide');
+            cards[nextIdx].classList.add('next-slide');
+        }
+
+        // 2. Automatic Rotation Logic (Cycles forward clockwise)
+        function startAutoSlide() {
+            slideTimer = setInterval(() => {
+                const nextIdx = (currentIndex + 1) % cards.length;
+                updateSlider(nextIdx);
+            }, 3000); // 3000ms = 3 seconds
+        }
+
+        // 3. Reset Engine on User Interaction
+        function resetTimer() {
+            if (slideTimer) {
+                clearInterval(slideTimer); // Destroys the active background countdown
+                startAutoSlide();          // Spawns a brand new fresh 4-second clock
+            }
+        }
+
+        // 4. Attach Click Events to Previews
+        cards.forEach((card, index) => {
+            card.addEventListener('click', function() {
+                if (card.classList.contains('prev-slide') || card.classList.contains('next-slide')) {
+                    resetTimer(); // 👈 Reset the clock first!
+                    updateSlider(index);
+                }
+            });
+        });
+
+        // Boot up the system positions + start the automatic clock loops
+        updateSlider(0);
+        startAutoSlide();
+    }
+    </script>
+
+    <!-- For the who we are & how to find us cards -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const cards = document.querySelectorAll('.about-card');
+        
+        // Configuration settings for the scroll observer
+        const observerOptions = {
+            root: null,         // Uses the browser window viewport
+            rootMargin: '0px',  // Triggers exactly when the element hits the screen boundary
+            threshold: 0.15     // Triggers when 15% of the card is visible on screen
+        };
+
+        const cardObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry, index) => {
+                // Check if the card has crossed into view
+                if (entry.isIntersecting) {
+                    const card = entry.target;
+                    
+                    // Optional: Adds a slight staggered delay based on the card's grid index
+                    // So card 2 spawns slightly after card 1 for a cleaner wave effect
+                    setTimeout(() => {
+                        card.classList.add('spawned');
+                    }, index * 100); 
+
+                    // CRUCIAL: Unobserve stops tracking the card once it has spawned.
+                    // This ensures it stays on the page forever until a browser refresh!
+                    observer.unobserve(card);
+                }
+            });
+        }, observerOptions);
+
+        // Tell the engine to start tracking each about card
+        cards.forEach(card => cardObserver.observe(card));
+    });
+    </script>
 
     <script src="components/header.js"></script>
     <script src="components/footer.js"></script>

@@ -243,6 +243,18 @@ footer {
     border-radius: 4px;
     padding: 1.5rem 1.25rem;
     text-align: left;
+
+    /* NEW ANIMATION PROPERTIES: */
+    opacity: 0;
+    transform: translateY(30px); /* Pushes the card down 30px */
+    transition: opacity 0.6s cubic-bezier(0.25, 1, 0.5, 1), 
+                transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: opacity, transform; /* Optimizes performance for mobile browsers */
+}
+
+.about-card.spawned {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .about-card h3 {
@@ -295,6 +307,84 @@ footer {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(4px); }
 }
+
+/*Carousel for home page*/
+/* 3D Card Slider Section */
+.card-slider-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-viewport {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust based on your preferred picture heights */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slider-card {
+    position: absolute;
+    width: 55%; /* Keeps cards overlapping neatly */
+    height: 90%;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    opacity: 0;
+    pointer-events: none;
+    /* Smoothly animates positioning, depth stacking, and size scaling simultaneously */
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.5s ease, z-index 0s linear 0.1s;
+}
+
+.slider-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* --- THE 3D STATES --- */
+
+/* Focused Center Card (Pops Forward) */
+.slider-card.active-slide {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 3;
+    transform: translateX(0) scale(1.08);
+    cursor: default; /* Normal mouse cursor over center image */
+}
+
+/* Left Preview Card (Pushed Left, Shrunk, and Clickable) */
+.slider-card.prev-slide {
+    opacity: 0.6;
+    z-index: 1;
+    pointer-events: auto; /* Crucial so it intercepts clicks! */
+    cursor: pointer;
+    transform: translateX(-40%) scale(0.85);
+}
+
+/* Right Preview Card (Pushed Right, Shrunk, and Clickable) */
+.slider-card.next-slide {
+    opacity: 0.6;
+    z-index: 1;
+    pointer-events: auto; /* Crucial so it intercepts clicks! */
+    cursor: pointer;
+    transform: translateX(40%) scale(0.85);
+}
+
+/* Subtle hover pop on side cards to show interactivity */
+.slider-card.prev-slide:hover,
+.slider-card.next-slide:hover {
+    opacity: 0.85;
+}
+/*End carousel for home page*/
 
 .nav-button:hover {
     background-color: #185FA5;
