@@ -604,7 +604,7 @@ html {
 
 .contact-header h1 {
     font-size: 2.5rem;
-    color: var(--darker-blue);
+    color: var(--dark-blue);
     margin-bottom: 0.5rem;
 }
 
@@ -633,7 +633,7 @@ html {
 
 .split-box h3 {
     font-size: 1.4rem;
-    color: var(--darker-blue);
+    color: var(--dark-blue);
     margin: 0 0 0.75rem 0;
 }
 
