@@ -586,21 +586,88 @@ html {
 }
 
 /* --- CONTACT US PAGE STYLES --- */
-.glow-link-contact {
-    color: #000000;
-    font-size: 1.2em;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+/* --- CONTACT US: SIDE-BY-SIDE CHANNEL SPLIT --- */
+
+.contact-page-wrapper {
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
 }
 
+.contact-split-wrapper {
+    max-width: 900px; /* Wider spacing to balance grid elements side-by-side */
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-header h1 {
+    font-size: 2.5rem;
+    color: var(--darker-blue);
+    margin-bottom: 0.5rem;
+}
+
+.contact-header p {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.contact-split-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.split-box {
+    background: #ffffff;
+    border-top: 4px solid var(--dark-blue); /* Accent colored upper border line */
+    padding: 3rem 2rem;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+    border-left: 1px solid rgba(0,0,0,0.02);
+    border-right: 1px solid rgba(0,0,0,0.02);
+    border-bottom: 1px solid rgba(0,0,0,0.02);
+}
+
+.split-box h3 {
+    font-size: 1.4rem;
+    color: var(--darker-blue);
+    margin: 0 0 0.75rem 0;
+}
+
+.split-box p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+    margin: 0 0 1.5rem 0;
+}
+
+.email-badge {
+    display: inline-block;
+    background: var(--light-blue);
+    color: var(--darker-blue);
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.email-badge:hover {
+    background-color: var(--cream);
+    transform: translateY(-1px);
+}
+
+/* Social Icon Structural Settings */
 .social-links {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     list-style: none;
     padding: 0;
-    margin: 20px 0 0 0;
+    margin: 10px 0 0 0;
 }
 
 .social-links li {
@@ -628,6 +695,14 @@ html {
 .social-link:focus-visible {
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Responsiveness breakpoints */
+@media (max-width: 768px) {
+    .contact-split-grid {
+        grid-template-columns: 1fr; /* Drops down to stack single-file on tablet widths */
+        gap: 1.5rem;
+    }
 }
 
 @media (max-width: 480px) {
