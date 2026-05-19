@@ -68,7 +68,7 @@ header {
 }
 
 .header-glow:hover {
-    color: var(--light-blue)
+    color: var(--light-blue);
 }
 
 .nav-links {
@@ -82,6 +82,97 @@ header {
     color: var(--dark-blue);
     font-weight: bold;
     transition: 0.3s;
+}
+
+/* ==================================================
+   NEW RESPONSIVE STYLES (Mobile and Tablet Drawer View)
+   ================================================== */
+
+/* Desktop safeguard to hide mobile layout tools when on big monitors */
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none !important;
+    }
+    .nav-links {
+        max-height: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 5px 20px; /* Snugs elements closer to the screen edges on small devices */
+    }
+
+    /* 1. STRUCTURAL HAMBURGER BUTTON WRAPPER */
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 28px;
+        height: 20px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 101; /* Keeps button rendering safely above drawer canvas layers */
+    }
+
+    .menu-toggle .bar {
+        width: 100%;
+        height: 3px;
+        background-color: var(--dark-blue);
+        border-radius: 2px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* MORPH INTERACTION ANIMATION (Transforms 3 lines into an 'X' close symbol) */
+    .menu-toggle.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu-toggle.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle.is-active .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    /* 2. CONVERT NAV-LINKS INTO A MOBILE DROP-DOWN MENU */
+    .nav-links {
+        position: absolute;
+        top: 100%; /* Spawns the drawer immediately below your sticky navbar bottom edge */
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+        
+        /* Layout transformation */
+        display: flex;
+        flex-direction: column;
+        gap: 0px; /* Controlled spacing via link paddings instead */
+        align-items: stretch; /* Stretches anchor targets for easier tap actions */
+        text-align: center;
+        
+        /* Collapsed Hidden State Engine */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    /* Target state class injected via click listener */
+    .nav-links.menu-open {
+        max-height: 300px; /* Safe bounds target to fully draw the block links list */
+    }
+
+    /* Mobile-specific adjustments for each individual link element */
+    .nav-links a {
+        padding: 1.25rem 0;
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.03); /* Soft division lines */
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none; /* Trims down excessive line framing on terminal nodes */
+    }
 }
 
 /* --- FOOTER --- */
