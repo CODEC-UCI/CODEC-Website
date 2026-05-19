@@ -292,6 +292,39 @@ footer {
 
 .hero-section h1 { color: var(--dark-blue); font-size: 4em; }
 
+/* FOR MOBILE DEVICES*/
+@media (max-width: 768px) {
+    
+    .hero-section {
+        flex-direction: column; /* Overrides row to stack items vertically */
+        gap: 2rem;              /* Snugs the text and image closer together */
+        padding: 3rem 5%;       /* Loosens up the extreme 17% side margins so it fits on screens */
+        min-height: auto;       /* Lets the phone screen length determine the frame size */
+        text-align: center;     /* Aligns text gracefully down the center axis */
+    }
+
+    .hero-text {
+        order: 1; /* Forces the logo, subtitle text, and learn more button to remain on top */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-logo {
+        max-width: 85%; /* Keeps the welcome message image asset safe inside phone edges */
+    }
+
+    .hero-image {
+        order: 2; /* Pushes the board picture block cleanly beneath the button */
+        width: 100%;
+    }
+
+    .hero-image img {
+        max-width: 100%; /* Overrides the desktop 600px boundary cap so it stays inside mobile screens */
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08); /* Optional: Soft ambient drop shadow */
+    }
+}
+
 .content-wrapper { font-family: 'open-sauce'; max-width: 900px; margin: 60px auto; text-align: left; padding: 0 20px; }
 .mission-box { background: var(--cream); border-left: 8px solid var(--dark-blue); padding: 30px; border-radius: 0 15px 15px 0; }
 
