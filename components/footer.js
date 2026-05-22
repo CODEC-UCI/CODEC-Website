@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <img src="images/logos/CODEC.jpg" alt="CODEC Logo" class="footer-logo">
             </a>
             <div class="footer-links-stack">
-                <a href="contact-us.html" class="contact-text-link">Contact Us</a>
+                <a href="contact-us.html" class="glow-link">Contact Us</a>
                 <a href="https://discord.gg/QSYSCFb" target="_blank" class="glow-link">Discord</a>
                 <a href="https://www.instagram.com/codec.uci/" target="_blank" class="glow-link">Instagram</a>
                 <a href="https://www.linkedin.com/in/codec-uci" target="_blank" class="glow-link">LinkedIn</a>

@@ -389,6 +389,17 @@ footer {
     margin: 0 0 0.5rem;
 }
 
+/* Glow link styling for dark text on light backgrounds (about-cards) */
+.glow-link-dark {
+    text-decoration: none;
+    color: var(--darker-blue);
+    font-weight: bold;
+    transition: 0.3s;
+}
+.glow-link-dark:hover {
+    text-shadow: 0 0 8px rgba(4, 44, 83, 0.4), 0 0 20px rgba(4, 44, 83, 0.2);
+}
+
 .about-card p {
     font-size: 0.9rem;
     color: #444;
