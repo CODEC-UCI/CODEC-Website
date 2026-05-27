@@ -120,7 +120,7 @@ header {
     .menu-toggle .bar {
         width: 100%;
         height: 3px;
-        background-color: var(--dark-blue);
+        background-color: var(--cream);
         border-radius: 2px;
         transition: all 0.3s ease-in-out;
     }
@@ -142,7 +142,7 @@ header {
         top: 100%; /* Spawns the drawer immediately below your sticky navbar bottom edge */
         left: 0;
         width: 100%;
-        background-color: #ffffff;
+        background-color: var(--darker-blue);
         box-shadow: 0 10px 15px rgba(0,0,0,0.05);
         
         /* Layout transformation */
