@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const headerHTML = `
     <header>
         <a href="index.html" class="header-logo">
-            <img src="images/logos/OFFICIAL_LOGO.png" alt="CODEC Home">
+            <img src="images/logos/logo2.png" alt="CODEC Home Button">
         </a>
         
         <button class="menu-toggle" aria-label="Toggle navigation">
