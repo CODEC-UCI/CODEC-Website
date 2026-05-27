@@ -7,7 +7,7 @@
     "tag": [
       "Workshop"
     ],
-    "content": "On May 5, 2026, CODEC hosted a \"How to Start a Personal Project\" workshop. Various baord members with diverse expereinces shared their insights on how they started their personal projects, the tools they used, and worked hands-on with general members to help kick start each members' own project. Members worked in groups to brainstorm real problems and were given the opportunity to present their proposed solutions. Throughout the workshop, members learned how to break down their ideas using a Minimum Viable Product (MVP) approach, create interface designs using Figma, and develop a simple tech stack that met the need of their projects.",
+    "content": "On May 5, 2026, CODEC hosted a \"How to Start a Personal Project\" workshop. Various baord members with diverse expereinces shared their insights on how they started their personal projects, the tools they used, and worked hands-on with general members to help kick start each members' own project. Members worked in groups to brainstorm real problems and were given the opportunity to present their proposed solutions. During the workshop, we went through the process of brainstorming solutions to a problem and breaking down a project into its Key Performance Indicators (KPIs) and core features. Members learned a guided approach towards solutions engineering by refining solutions and ideas into sets of features, narrowing down these features into an MVP (Minimum Viable Product) based off of scope and impact, and utilizing modern development tools and strategies to implement and deploy the final product.",
     "images": [
       {
         "filename": ""
