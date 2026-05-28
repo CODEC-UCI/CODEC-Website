@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CODEC | Resources Page</title>
+    <meta name="description" content="Explore resources curated by CODEC at UC Irvine — internships, research opportunities, academic support, and more.">
     <link rel="stylesheet" href="style.css">
     <!-- Used to get logo on website browser tab -->
     <link rel="icon" type="image/x-icon" href="/images/logos/favicon.ico">
@@ -12,3 +13,131 @@
     <meta name="robots" content="noimageindex">
 </head>
 
+<body>
+    <div class="content-wrapper">
+        <h1>Resources</h1>
+        <p style="font-style: italic;">Curated by CODEC — updated regularly and posted to our Discord every week.</p>
+
+        <!-- Category filter buttons -->
+        <div class="filter-bar" id="filter-bar">
+            <button class="filter-btn active" data-filter="ALL">All</button>
+        </div>
+
+        <div id="resources-list" class="events-grid" aria-live="polite">
+            <!-- Resource cards populated by JS -->
+        </div>
+    </div>
+ 
+    <script>
+    // fetch resources from a local CSV file, parse, and render them as cards on the page
+    document.addEventListener('DOMContentLoaded', function () {
+        fetch('resources.csv')
+            .then(r => r.text())
+            .then(csv => {
+                const resources = parseCSV(csv);
+                renderResources(resources);
+            })
+            .catch(err => {
+                console.error(err);
+                document.getElementById('resources-list').innerHTML =
+                    '<p class="resources-status">Could not load resources.</p>';
+            });
+    });
+
+    function parseCSV(csv) {
+        const lines = csv.trim().split('\n');
+        const headers = lines[0].split(',');
+        return lines.slice(1).map(line => {
+            // Handles commas inside quoted fields
+            const cols = line.match(/(".*?"|[^,]+)(?=,|$)/g) || [];
+            return {
+                category:    (cols[0] || '').replace(/"/g, '').trim(),
+                name:        (cols[1] || '').replace(/"/g, '').trim(),
+                description: (cols[2] || '').replace(/"/g, '').trim(),
+                link:        (cols[3] || '').replace(/"/g, '').trim(),
+                date:        (cols[4] || '').replace(/"/g, '').trim()
+            };
+        });
+    }
+ 
+    function renderResources(resources) {
+        const list    = document.getElementById('resources-list');
+        const filterBar = document.getElementById('filter-bar');
+ 
+        if (!resources.length) {
+            list.innerHTML = '<p class="resources-status">No resources found.</p>';
+            return;
+        }
+ 
+        // 1. Build unique category list for filter buttons
+        const categories = [...new Set(resources.map(r => r.category.toUpperCase()))].sort();
+        categories.forEach(cat => {
+            const btn = document.createElement('button');
+            btn.className = 'filter-btn';
+            btn.dataset.filter = cat;
+            btn.textContent = cat.charAt(0) + cat.slice(1).toLowerCase(); // "Academic" not "ACADEMIC"
+            filterBar.appendChild(btn);
+        });
+ 
+        // 2. Render all cards initially
+        buildCards(resources, list);
+ 
+        // 3. Wire up filter buttons
+        filterBar.addEventListener('click', function (e) {
+            const btn = e.target.closest('.filter-btn');
+            if (!btn) return;
+ 
+            // Toggle active state
+            filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+ 
+            const filter = btn.dataset.filter;
+            const filtered = filter === 'ALL'
+                ? resources
+                : resources.filter(r => r.category.toUpperCase() === filter);
+ 
+            buildCards(filtered, list);
+        });
+    }
+ 
+    function buildCards(resources, container) {
+        container.innerHTML = '';
+ 
+        if (!resources.length) {
+            container.innerHTML = '<p class="resources-status">No resources in this category yet.</p>';
+            return;
+        }
+ 
+        resources.forEach((r, i) => {
+            const card = document.createElement('article');
+            card.className = 'resource-card';
+ 
+            // Build date line only if a date exists
+            const dateHTML = r.date
+                ? `<span class="date" style="font-size:0.8rem; margin-left: auto;">Due: ${r.date}</span>`
+                : '';
+ 
+            card.innerHTML = `
+                <div class="resource-card-header">
+                    <span class="tag">${r.category}</span>
+                    ${dateHTML}
+                </div>
+                <h2>${r.name}</h2>
+                <p>${r.description}</p>
+                <a class="resource-link-btn" href="${r.link}" target="_blank" rel="noopener noreferrer">
+                    View Resource →
+                </a>
+            `;
+ 
+            container.appendChild(card);
+ 
+            // Staggered spawn animation (same pattern as about-cards)
+            setTimeout(() => card.classList.add('spawned'), i * 80);
+        });
+    }
+    </script>
+ 
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+</body>
+</html>
