@@ -100,6 +100,13 @@
           `)
           .join('');
      
+        const formattedContent = (content || '')
+          .split(/\t+|\n+/)
+          .map(segment => segment.trim())
+          .filter(Boolean)
+          .map(segment => `<p>${segment}</p>`)
+          .join('');
+
         // write main content of the event, along with images and links sections if they exist
         eventContent = `
           <article class="event-detail-card">
@@ -111,7 +118,7 @@
               </div>
 
               <section class="event-body">
-                <p>${content || ''}</p>
+                ${formattedContent}
               </section>
 
               ${galleryHtml}
