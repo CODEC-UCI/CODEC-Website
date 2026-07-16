@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <a href="contact-us.html" class="glow-link">Contact Us</a>
                 <a href="https://discord.gg/QSYSCFb" target="_blank" class="glow-link">Discord</a>
                 <a href="https://www.instagram.com/codec.uci/" target="_blank" class="glow-link">Instagram</a>
-                <a href="https://www.linkedin.com/in/codec-uci" target="_blank" class="glow-link">LinkedIn</a>
+                <a href="https://www.linkedin.com/company/codec-uci/posts/?feedView=all" target="_blank" class="glow-link">LinkedIn</a>
                 <a href="https://linktr.ee/codec.uci" target="_blank" class="glow-link">LinkTree</a>
             </div>
         </div>
