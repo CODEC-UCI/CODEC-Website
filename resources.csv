@@ -1,53 +1,53 @@
-category,name,description,link,date
-Wed Feb 11 2026 00:37:31 GMT-0800 (Pacific Standard Time),Student Center,https://studentcenter.uci.edu/learn-and-enjoy/study/,"Provides a quiet place for students to study. During finals week of fall, winter, or spring quarters, the building is open 24 hours a day.
+category,name,description,link
+ACADEMIC,Student Center,https://studentcenter.uci.edu/learn-and-enjoy/study/,"Provides a quiet place for students to study. During finals week of fall, winter, or spring quarters, the building is open 24 hours a day.
 
-Both open spaces and bookable study rooms are available.",ACADEMIC
-Wed Feb 11 2026 00:40:21 GMT-0800 (Pacific Standard Time),ICS Tutoring Center,https://ics.uci.edu/2024/03/05/the-ics-tutoring-center-is-here-to-help/,"Located in ICS 2, Room 110. Fellow ICS students are available on Wed. and Th. from 12 to 5 PM and Fri. from 12 to 7 PM.
+Both open spaces and bookable study rooms are available."
+ACADEMIC,ICS Tutoring Center,https://ics.uci.edu/2024/03/05/the-ics-tutoring-center-is-here-to-help/,"Located in ICS 2, Room 110. Fellow ICS students are available on Wed. and Th. from 12 to 5 PM and Fri. from 12 to 7 PM.
 
-Tutoring available for various ICS courses. No appointment necessary!",ACADEMIC
-Wed Feb 11 2026 00:51:31 GMT-0800 (Pacific Standard Time),OAI Study Center,https://oai.ics.uci.edu/oai-tutoring/,"Located in ICS 2, Room 136. Tutoring available, by appointment, from 12 to 5 PM Monday to Friday, free of charge.
-Tutoring available for various ICS courses by OAI’s learning mentors.",ACADEMIC
-Wed Feb 11 2026 01:30:40 GMT-0800 (Pacific Standard Time),UCI ANTrepreneur Center,https://antrepreneur.uci.edu/,"ANTrepreneur Center (Startup & Innovation Support) supports students interested in startups or tech innovation. It also provides pitch help, mentorship, workshops, prototyping resources, and community events for aspiring founders.",ACADEMIC
-Wed Feb 11 2026 01:31:15 GMT-0800 (Pacific Standard Time),CLAOC,https://claoc.org https://www.linkedin.com/company/claoc/,"CLAOC is an organization that partners with local OC companies to recruit local talent, here is their site",PROFESSIONAL
-Wed Feb 11 2026 01:31:50 GMT-0800 (Pacific Standard Time),Brighter Futures OC,https://www.linkedin.com/showcase/claoc-brighter-futures/ https://brighterfuturesoc.org/companies/,"Subset of CLAOC that advertises and announces internship opportunities. Most if not all opportunities are posted on the brighter futures linked in page.
+Tutoring available for various ICS courses. No appointment necessary!"
+ACADEMIC,OAI Study Center,https://oai.ics.uci.edu/oai-tutoring/,"Located in ICS 2, Room 136. Tutoring available, by appointment, from 12 to 5 PM Monday to Friday, free of charge.
+Tutoring available for various ICS courses by OAI’s learning mentors."
+ACADEMIC,UCI ANTrepreneur Center,https://antrepreneur.uci.edu/,"ANTrepreneur Center (Startup & Innovation Support) supports students interested in startups or tech innovation. It also provides pitch help, mentorship, workshops, prototyping resources, and community events for aspiring founders."
+PROFESSIONAL,CLAOC,https://claoc.org https://www.linkedin.com/company/claoc/,"CLAOC is an organization that partners with local OC companies to recruit local talent, here is their site"
+PROFESSIONAL,Brighter Futures OC,https://www.linkedin.com/showcase/claoc-brighter-futures/ https://brighterfuturesoc.org/companies/,"Subset of CLAOC that advertises and announces internship opportunities. Most if not all opportunities are posted on the brighter futures linked in page.
 
-Follow them on Instagram: @brighterfuturesoc",PROFESSIONAL
-Wed Feb 11 2026 01:37:43 GMT-0800 (Pacific Standard Time),Break Through Tech AI/ML Program,https://www.breakthroughtech.org/programs/the-ai-program/,"The AI Program is a virtual, one-year extracurricular experience that equips you with the skills needed to secure a job in the fastest-growing areas of tech: data science, artificial intelligence (AI), and machine learning (ML)
+Follow them on Instagram: @brighterfuturesoc"
+PROFESSIONAL,Break Through Tech AI/ML Program,https://www.breakthroughtech.org/programs/the-ai-program/,"The AI Program is a virtual, one-year extracurricular experience that equips you with the skills needed to secure a job in the fastest-growing areas of tech: data science, artificial intelligence (AI), and machine learning (ML)
 
-Applications open in December every year!",PROFESSIONAL
-Mon Feb 16 2026 12:31:09 GMT-0800 (Pacific Standard Time),NVIDIA Agentic AI Bootcamp (Virtual),https://www.openhackathons.org/s/siteevent/a0CUP00003eiaQw2AI/se000469,"The NVIDIA Agentic AI Bootcamp is a 5-day virtual, hands-on training program focused on building intelligent AI agents using modern development tools. Participants will learn how to design and deploy agentic AI workflows using technologies like Model Context Protocol (MCP), NVIDIA NIM microservices, and LangGraph for stateful AI systems.
+Applications open in December every year!"
+PROFESSIONAL,NVIDIA Agentic AI Bootcamp (Virtual),https://www.openhackathons.org/s/siteevent/a0CUP00003eiaQw2AI/se000469,"The NVIDIA Agentic AI Bootcamp is a 5-day virtual, hands-on training program focused on building intelligent AI agents using modern development tools. Participants will learn how to design and deploy agentic AI workflows using technologies like Model Context Protocol (MCP), NVIDIA NIM microservices, and LangGraph for stateful AI systems.
 
 Attendees will build MCP servers and clients, integrate them with NVIDIA NIM, and apply their skills in a final challenge by modifying an existing AI workflow. The bootcamp includes step-by-step guidance and live support from teaching assistants, making it beginner-friendly for students interested in AI development and applied machine learning.
 
 This resource is ideal for students looking to gain practical experience in AI systems, workflows, and large language model integration.
 
-DEADLINE IS NEXT WEEK! BE SURE TO APPLY.",PROFESSIONAL
-Mon Feb 16 2026 12:42:20 GMT-0800 (Pacific Standard Time),OAI,https://oai.eng.uci.edu/,"Free tutoring is available in ICS 2, Room 136 from 12:00–5:00 PM, Monday through Friday (by appointment).
+DEADLINE IS NEXT WEEK! BE SURE TO APPLY."
+ACADEMIC,OAI,https://oai.eng.uci.edu/,"Free tutoring is available in ICS 2, Room 136 from 12:00–5:00 PM, Monday through Friday (by appointment).
 
-Tutoring is offered for a variety of ICS courses and is led by OAI’s trained learning mentors. This is a great resource for students who want help with coursework, exam prep, or programming assignments in a supportive environment.",ACADEMIC
-Mon Feb 16 2026 12:46:38 GMT-0800 (Pacific Standard Time),Amazon Nova AI Hackathon,https://amazon-nova.devpost.com/?ref_feature=challenge&ref_medium=discover&_gl=1*phqx58*_gcl_au*MTAxODgxMDgwNy4xNzcxMjc0NjY1*_ga*MTc3MTc0Nzg1NC4xNzcxMjc0NjY1*_ga_0YHJK3Y10M*czE3NzEyNzQ2NjQkbzEkZzAkdDE3NzEyNzQ2NjQkajYwJGwwJGgw,"The Amazon Nova AI Hackathon challenges participants to build innovative generative AI applications using Amazon Nova foundation models on AWS. Developers can create agentic AI systems, multimodal applications (text, speech, images), voice AI tools, or UI automation agents powered by Nova Act.
+Tutoring is offered for a variety of ICS courses and is led by OAI’s trained learning mentors. This is a great resource for students who want help with coursework, exam prep, or programming assignments in a supportive environment."
+COMPETITION,Amazon Nova AI Hackathon,https://amazon-nova.devpost.com/?ref_feature=challenge&ref_medium=discover&_gl=1*phqx58*_gcl_au*MTAxODgxMDgwNy4xNzcxMjc0NjY1*_ga*MTc3MTc0Nzg1NC4xNzcxMjc0NjY1*_ga_0YHJK3Y10M*czE3NzEyNzQ2NjQkbzEkZzAkdDE3NzEyNzQ2NjQkajYwJGwwJGgw,"The Amazon Nova AI Hackathon challenges participants to build innovative generative AI applications using Amazon Nova foundation models on AWS. Developers can create agentic AI systems, multimodal applications (text, speech, images), voice AI tools, or UI automation agents powered by Nova Act.
 
 Open to students and professionals (18+), this fully virtual competition provides technical documentation, workshops, office hours, and community support. Participants submit a working demo, short video, and code repository.
 
-This is a strong opportunity for ICS students interested in AI, cloud computing, and large language model integration to build a portfolio-ready project and compete for major prizes. This is also beginner-friendly, so we encourage everyone to check it out!",COMPETITION
-Tue Feb 24 2026 08:39:29 GMT-0800 (Pacific Standard Time),Irvine Underground,https://www.irvineunderground.org/,"This is a meetup with sysadmins, hackers, and other programmers with an interest in cybersecurity (hacking and defending from hackers). Speak to veterans in the field and programmers passionate in security. Everyone is welcome, no background knowledge needed.",PROFESSIONAL
-Tue Feb 24 2026 08:53:08 GMT-0800 (Pacific Standard Time),SWE-OC undergrad Scholarship,https://swe-oc.swe.org/wp-content/uploads/sites/26/2026/02/FY26-SWE%E2%80%93OC-Undergraduate-Student-Scholarship-Details.pdf,"Are you a member of the Society of Women Engineers? There's a scholarship available to you, awarding up to $600 as long as you meet these following criteria and apply through their website: 
+This is a strong opportunity for ICS students interested in AI, cloud computing, and large language model integration to build a portfolio-ready project and compete for major prizes. This is also beginner-friendly, so we encourage everyone to check it out!"
+PROFESSIONAL,Irvine Underground,https://www.irvineunderground.org/,"This is a meetup with sysadmins, hackers, and other programmers with an interest in cybersecurity (hacking and defending from hackers). Speak to veterans in the field and programmers passionate in security. Everyone is welcome, no background knowledge needed."
+SCHOLARSHIP,SWE-OC undergrad Scholarship,https://swe-oc.swe.org/wp-content/uploads/sites/26/2026/02/FY26-SWE%E2%80%93OC-Undergraduate-Student-Scholarship-Details.pdf,"Are you a member of the Society of Women Engineers? There's a scholarship available to you, awarding up to $600 as long as you meet these following criteria and apply through their website: 
 * You must have at least one year left before graduating
 * Be a member of the Society of Women Engineers(SWE)
-* And have 3.0 + GPA while being under an engineering or computer science major",SCHOLARSHIP
-Wed Feb 25 2026 12:18:44 GMT-0800 (Pacific Standard Time),Orange County Innovation Week,https://octaneoc.org/ociw/,"Are you interested in keeping up with the tech space of Orange County? Orange County Innovation Week is a week long event from April 20 - 24th celebrating tech leaders, students, and tech investors. This is a great networking opportunity that includes pitches, panels, forums, and networking sessions focused on cutting-edge tech and entrepreneurship, and it’s run by the local innovation nonprofit Octane OC.",PROFESSIONAL
-Mon Mar 02 2026 01:54:26 GMT-0800 (Pacific Standard Time),UDEMY,https://www.oit.uci.edu/services/it-professional-services/udemy/,"Udemy is an online learning platform that offers thousands of video-based courses taught by industry professionals and experts. It covers topics like programming, business, design, data science, marketing, personal development, and more. As UCI students we get access to all of these courses FOR FREE!!!
+* And have 3.0 + GPA while being under an engineering or computer science major"
+PROFESSIONAL,Orange County Innovation Week,https://octaneoc.org/ociw/,"Are you interested in keeping up with the tech space of Orange County? Orange County Innovation Week is a week long event from April 20 - 24th celebrating tech leaders, students, and tech investors. This is a great networking opportunity that includes pitches, panels, forums, and networking sessions focused on cutting-edge tech and entrepreneurship, and it’s run by the local innovation nonprofit Octane OC."
+ACADEMIC,UDEMY,https://www.oit.uci.edu/services/it-professional-services/udemy/,"Udemy is an online learning platform that offers thousands of video-based courses taught by industry professionals and experts. It covers topics like programming, business, design, data science, marketing, personal development, and more. As UCI students we get access to all of these courses FOR FREE!!!
 
 I really wanted to highlight this because I’ve personally learned so much from high-quality courses on there. It’s honestly one of the most underrated resources we have. Whether you want to strengthen concepts from class, explore something new, or build practical skills that make your resume stand out, Udemy makes it easy to go deeper into what actually interests you.
 
-I genuinely encourage everyone to take advantage of it. It’s a great way to grow both professionally and personally.",ACADEMIC
-Mon Mar 02 2026 02:09:10 GMT-0800 (Pacific Standard Time),AFCEA STEM Majors Scholarship,https://www.afcea.org/stem-majors-scholarships,"AFCEA offers multiple scholarships for undergraduate STEM majors, including the $2,500 STEM Major Scholarship and the $5,000 Cyber Security Scholarship. Applications are open January 1 to May 1, 2026, and students only need to submit one application to be considered for all eligible awards.
+I genuinely encourage everyone to take advantage of it. It’s a great way to grow both professionally and personally."
+SCHOLARSHIP,AFCEA STEM Majors Scholarship,https://www.afcea.org/stem-majors-scholarships,"AFCEA offers multiple scholarships for undergraduate STEM majors, including the $2,500 STEM Major Scholarship and the $5,000 Cyber Security Scholarship. Applications are open January 1 to May 1, 2026, and students only need to submit one application to be considered for all eligible awards.
 
 Requirements:
 - Have to be a sophomore or junior to apply
 - Have a 3.0 GPA or higher
-- Be a U.S. citizen or permanent resident",SCHOLARSHIP
-Mon Mar 02 2026 02:15:46 GMT-0800 (Pacific Standard Time),Red Bull Basement 2026 (Innovation challenge!),https://www.redbull.com/us-en/events/red-bull-basement-usa-2026/,"Red Bull Basement is a national innovation competition where students submit an idea using AI tools for a chance to pitch at the World Finals in San Francisco. Three U.S. teams are selected to develop an MVP with mentorship from Microsoft and AMD, then compete globally for a $100,000 grand prize.
+- Be a U.S. citizen or permanent resident"
+COMPETITION,Red Bull Basement 2026 (Innovation challenge!),https://www.redbull.com/us-en/events/red-bull-basement-usa-2026/,"Red Bull Basement is a national innovation competition where students submit an idea using AI tools for a chance to pitch at the World Finals in San Francisco. Three U.S. teams are selected to develop an MVP with mentorship from Microsoft and AMD, then compete globally for a $100,000 grand prize.
 
 Application process: Submit an idea
 → selected applicants record a 1-minute video pitch
@@ -56,42 +56,42 @@ Application process: Submit an idea
 
 The first step is just sharing a simple idea in a few sentences, so take a few minutes to think about it. Even if you think your idea isn’t perfect, it doesn’t hurt to try, this is a great opportunity to gain experience and exposure.
 
-Open to U.S. residents (18+)",COMPETITION
-Mon Mar 02 2026 16:32:15 GMT-0800 (Pacific Standard Time),Kaiser Permanente Computer Science Internship,https://www.kaiserpermanentejobs.org/job/san-diego/computer-science-bachelor-s-intern/641/91387455472?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic,"Kaiser Permanente San Diego is now accepting applications for their Computer Science undergraduate internship. You’ll support the Southern California Medical Informatics team on projects like AI‑based smart questionnaires and the Get Care Now platform. Work includes assisting with database maintenance, running queries, preparing reports, and analyzing data such as budgeting, production statistics, and service utilization. This is a great opportunity for those comfortable in using Java, JavaScript, and GitHub. Don't forget to apply and check the link for more information!",PROFESSIONAL
-Tue Apr 07 2026 20:45:04 GMT-0700 (Pacific Daylight Time),Devpost Hackathons,https://devpost.com/hackathons,"Devpost is a platform where students can find and participate in hackathons that are currently open. I like this resource because there are always multiple competitions accepting submissions or registrations, so you don’t have to wait for one specific event. You can work on real projects, build your portfolio, and gain experience even as a beginner. It’s a great way to get hands-on experience and something to put on your resume early on.",COMPETITION
-Wed Apr 08 2026 00:00:00 GMT-0700 (Pacific Daylight Time),VenusHacks 2026,https://venushacks.com,"Missed IrvineHacks? No worries!!!
+Open to U.S. residents (18+)"
+PROFESSIONAL,Kaiser Permanente Computer Science Internship,https://www.kaiserpermanentejobs.org/job/san-diego/computer-science-bachelor-s-intern/641/91387455472?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic,"Kaiser Permanente San Diego is now accepting applications for their Computer Science undergraduate internship. You’ll support the Southern California Medical Informatics team on projects like AI‑based smart questionnaires and the Get Care Now platform. Work includes assisting with database maintenance, running queries, preparing reports, and analyzing data such as budgeting, production statistics, and service utilization. This is a great opportunity for those comfortable in using Java, JavaScript, and GitHub. Don't forget to apply and check the link for more information!"
+COMPETITION,Devpost Hackathons,https://devpost.com/hackathons,"Devpost is a platform where students can find and participate in hackathons that are currently open. I like this resource because there are always multiple competitions accepting submissions or registrations, so you don’t have to wait for one specific event. You can work on real projects, build your portfolio, and gain experience even as a beginner. It’s a great way to get hands-on experience and something to put on your resume early on."
+COMPETITION,VenusHacks 2026,https://venushacks.com,"Missed IrvineHacks? No worries!!!
 
 VenusHacks is UCI’s largest women-centric hackathon, and applications are currently open as of yesterday! While it focuses on uplifting women in tech, it is open to everyone, so anyone can apply and participate.
 
-This is a great opportunity to meet new people, work in teams, and build a project — even (and especially) if you’re a beginner. It’s also a really good way to get your first project and experience for your resume.",COMPETITION
-Tue Apr 07 2026 20:54:02 GMT-0700 (Pacific Daylight Time),TRIO Scholars Program (UCI),https://ssi.uci.edu/trio-scholars/,"The TRIO Scholars Program at UCI provides academic support, mentorship (meetings with a personal advisor), tutoring, and career guidance for students throughout their college journey. This program gives you a strong support system.
+This is a great opportunity to meet new people, work in teams, and build a project — even (and especially) if you’re a beginner. It’s also a really good way to get your first project and experience for your resume."
+ACADEMIC,TRIO Scholars Program (UCI),https://ssi.uci.edu/trio-scholars/,"The TRIO Scholars Program at UCI provides academic support, mentorship (meetings with a personal advisor), tutoring, and career guidance for students throughout their college journey. This program gives you a strong support system.
 
-It’s especially helpful if you’re looking for guidance, community, and structured support to succeed in your first years of college. TRIO can help you if you’re feeling unsure and want direction, support, and people who are genuinely there to help you succeed.",ACADEMIC
-Tue Apr 07 2026 20:56:24 GMT-0700 (Pacific Daylight Time),Big Interview (UCI Career Pathways),https://career.uci.edu/undergraduate/prepare-for-an-interview/big-interview/,"Scared of interviews? Use Big Interview to practice!
+It’s especially helpful if you’re looking for guidance, community, and structured support to succeed in your first years of college. TRIO can help you if you’re feeling unsure and want direction, support, and people who are genuinely there to help you succeed."
+PROFESSIONAL,Big Interview (UCI Career Pathways),https://career.uci.edu/undergraduate/prepare-for-an-interview/big-interview/,"Scared of interviews? Use Big Interview to practice!
 
 Big Interview is a free online platform available through UCI that helps you practice and improve your interview skills. It lets you do mock interviews, get familiar with common interview questions, and even receive feedback on your answers. It also has step-by-step guidance for answering behavioral questions, which can be really helpful if you don’t know how to structure your responses yet.
 
-This is a great resource if you’re preparing for internships or jobs and want to feel more confident going into interviews.",PROFESSIONAL
-Tue Apr 14 2026 11:42:08 GMT-0700 (Pacific Daylight Time),Teach for America Ignite,https://www.teachforamerica.org/ignite?utm_source=google&utm_medium=cpc&utm_campaign=fy26-ignite-grants-spring&utm_content=variant-b-impact&utm_term=teach%20for%20america%20ignite&utm_content=mktg_recruitment_fy20&gad_source=1&gad_campaignid=23740048529&gbraid=0AAAAAD_iPDYcspiO96VkFG9nUOworlK-x&gclid=Cj0KCQjwy_fOBhC6ARIsAHKFB7-ZpK-PzqoVe6WQhwgoMUDAJhf_NArBDm_RI1_1v2Ktzz3aCt_Uk-caAi6DEALw_wcB,"- Tutor for elementary reading, middle school math, or high school college and career advancement. 
+This is a great resource if you’re preparing for internships or jobs and want to feel more confident going into interviews."
+PROFESSIONAL,Teach for America Ignite,https://www.teachforamerica.org/ignite?utm_source=google&utm_medium=cpc&utm_campaign=fy26-ignite-grants-spring&utm_content=variant-b-impact&utm_term=teach%20for%20america%20ignite&utm_content=mktg_recruitment_fy20&gad_source=1&gad_campaignid=23740048529&gbraid=0AAAAAD_iPDYcspiO96VkFG9nUOworlK-x&gclid=Cj0KCQjwy_fOBhC6ARIsAHKFB7-ZpK-PzqoVe6WQhwgoMUDAJhf_NArBDm_RI1_1v2Ktzz3aCt_Uk-caAi6DEALw_wcB,"- Tutor for elementary reading, middle school math, or high school college and career advancement. 
 - Earn a financial award at the end of each semester, ranging from $1,000-$1,200
 - 3-5 hours/week from September to December 2026
 - Virtual, remote work
 - Choose a schedule that works best for you
-- ALL MAJORS WELCOME",PROFESSIONAL
-Thu Apr 16 2026 10:22:12 GMT-0700 (Pacific Daylight Time),BIT Break the Code,https://tinyurl.com/bitbreakthecode-2,"Are you interested in mentoring high school students and teaching them the fundamentals of coding, teamwork, and problem solving while improving your own abilities and understanding? Black in Tech's is hosting a mentorship program, Break the Code. You'll be guiding students and creating a supportive and engaging learning environment for them here at UCI. Check the link out if you are interested in this mentorship opportunity.",ACADEMIC
-Mon Apr 20 2026 18:39:28 GMT-0700 (Pacific Daylight Time),Xu Lab Tour,https://docs.google.com/forms/d/e/1FAIpQLSd9lkc829RXSODieuE6J5mplYRDu9DMjPpkqVNz07OWr-4cwA/viewform,"If you didn’t catch this in Monday’s resource drop, we’re reposting it since the RSVP is due today. This is a behind-the-scenes tour of the Xu Lab, where researchers study how the brain processes things like vision, learning, and memory.
+- ALL MAJORS WELCOME"
+ACADEMIC,BIT Break the Code,https://tinyurl.com/bitbreakthecode-2,"Are you interested in mentoring high school students and teaching them the fundamentals of coding, teamwork, and problem solving while improving your own abilities and understanding? Black in Tech's is hosting a mentorship program, Break the Code. You'll be guiding students and creating a supportive and engaging learning environment for them here at UCI. Check the link out if you are interested in this mentorship opportunity."
+ACADEMIC,Xu Lab Tour,https://docs.google.com/forms/d/e/1FAIpQLSd9lkc829RXSODieuE6J5mplYRDu9DMjPpkqVNz07OWr-4cwA/viewform,"If you didn’t catch this in Monday’s resource drop, we’re reposting it since the RSVP is due today. This is a behind-the-scenes tour of the Xu Lab, where researchers study how the brain processes things like vision, learning, and memory.
 
 By attending this tour, you’ll get a better idea of what working in a lab is like, how research projects work, and whether this is something you might want to get involved in (which can help a lot for grad school or internships later). It’s also a good chance to ask questions and connect with people already doing research.
 
-Limited spots available, so RSVP ASAP!",ACADEMIC
-Wed Apr 29 2026 12:02:02 GMT-0700 (Pacific Daylight Time),Networking 101: Practice the Skills that Lead to Internships and Jobs,https://app.joinhandshake.com/stu/events/1927683,"This is an in-person workshop hosted by the UCI Division of Career Pathways focused on building networking skills for internships and jobs. Here, you will learn how to confidently start conversations, build professional relationships, and use networking as a tool for career opportunities.
+Limited spots available, so RSVP ASAP!"
+PROFESSIONAL,Networking 101: Practice the Skills that Lead to Internships and Jobs,https://app.joinhandshake.com/stu/events/1927683,"This is an in-person workshop hosted by the UCI Division of Career Pathways focused on building networking skills for internships and jobs. Here, you will learn how to confidently start conversations, build professional relationships, and use networking as a tool for career opportunities.
 
-This is a great opportunity to start networking!",PROFESSIONAL
-Wed Apr 29 2026 12:04:11 GMT-0700 (Pacific Daylight Time),UCI Learning and Academic Resource Center (LARC) Tutoring,http://larc.uci.edu/,"If you are struggling with a course, you should consider enrolling in LARC!
+This is a great opportunity to start networking!"
+ACADEMIC,UCI Learning and Academic Resource Center (LARC) Tutoring,http://larc.uci.edu/,"If you are struggling with a course, you should consider enrolling in LARC!
 
-LARC is a small-group tutoring session for courses like math, science, and writing led by trained peer tutors. LARC helps students strengthen their understanding of course material, improve study strategies, and perform better on exams.",ACADEMIC
-Wed Apr 29 2026 12:29:38 GMT-0700 (Pacific Daylight Time),NetWICS Mentorship,https://docs.google.com/forms/d/e/1FAIpQLSfadIzJ2vSbEBdsg4LsKGdWTnomympjr8jdpMl9WpqGhkukNw/viewform,"NetWICS is a 2-day conference for high school students interested in exploring different career paths in computer science and connecting with UC Irvine undergrads. It includes mentorship, networking, and some fun interactive + technical activities.
+LARC is a small-group tutoring session for courses like math, science, and writing led by trained peer tutors. LARC helps students strengthen their understanding of course material, improve study strategies, and perform better on exams."
+ACADEMIC,NetWICS Mentorship,https://docs.google.com/forms/d/e/1FAIpQLSfadIzJ2vSbEBdsg4LsKGdWTnomympjr8jdpMl9WpqGhkukNw/viewform,"NetWICS is a 2-day conference for high school students interested in exploring different career paths in computer science and connecting with UC Irvine undergrads. It includes mentorship, networking, and some fun interactive + technical activities.
 
 They’re looking for mentors to support 1–2 students during the event, help them get involved, and just be a friendly guide throughout the day. It’s a low commitment and a nice way to give back while gaining mentorship experience.
 
-Deadline is in 2 days, so don't forget to apply!!",ACADEMIC
+Deadline is in 2 days, so don't forget to apply!!"
