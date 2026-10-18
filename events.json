@@ -1,5 +1,34 @@
 [
   {
+    "id": "10132026-course-planning",
+    "title": "Course Planning",
+    "date": "October 13, 2026",
+    "summary": "Learn how to plan future quarters, find helpful course-planning resources, and discover classes that match your interests!",
+    "tag": [
+      "Academic"
+    ],
+    "content": "On October 13, 2026, CODEC hosted our Course Planning event, where students got their questions about courses and professors answered, learned from peers who had been in their position, and explored how to plan for future quarters.\n\nWe walked students through the process of finding major requirements, navigating the course catalog and school-specific course listings, and using resources like DegreeWorks, AntAlmanac, and RateMyProfessor to help them decide which courses to take and which professors to learn from. We also introduced CODEC’s Course Hub, a tool we developed to help students discover courses that match their interests with a simple query!\n\nWe hope these resources help students feel more confident planning their academic journeys. Good luck with future quarters, and we look forward to seeing everyone at our next event!",
+    "images": [
+      {
+        "filename": "course_planning_1013206_1.jpg"
+      },
+      {
+        "filename": "course_planning_1013206_2.jpg"
+      },
+      {
+        "filename": "course_planning_1013206_3.jpg"
+      },
+      {
+        "filename": "course_planning_1013206_4.jpg"
+      }
+    ],
+    "links": [
+      {
+        "href": ""
+      }
+    ]
+  },
+  {
     "id": "10062026-speed-friending",
     "title": "Speed Friending",
     "date": "October 06, 2026",
