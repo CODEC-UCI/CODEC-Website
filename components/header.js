@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <a href="about-us.html" class="header-glow">About Us</a>
             <a href="events.html" class="header-glow">Events</a>
             <a href="resources.html" class="header-glow">Resources</a>
-            <a href="https://codec.clotho.ics.uci.edu/" class="header-glow">Club Hub</a>
+            <a href="https://codec.clotho.ics.uci.edu/" class="header-glow">CODEC Hub</a>
             <a href="contact-us.html" class="header-glow">Contact Us</a>
         </div>
     </header>
