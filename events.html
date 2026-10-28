@@ -38,6 +38,10 @@
                     list.innerHTML = '<p>No events found.</p>';
                     return;
                 }
+                
+                // sort by date, newest first
+                events.sort((a, b) => new Date(b.date) - new Date(a.date));
+                
                 // 2. generate an event card for each event
                 // each card has date, tag, and summary info
                 events.forEach(ev => {
