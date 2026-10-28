@@ -1,5 +1,60 @@
 [
   {
+    "id": "09252026-ics-launch-day",
+    "title": "ICS Launch Day",
+    "date": "September 25, 2026",
+    "summary": "Join CODEC to learn everything you need to succeed in ICS!",
+    "tag": [
+      "Social",
+      "Academic",
+      "Workshop"
+    ],
+    "content": "During Week 0, CODEC hosted ICS Launch Day, an event catered to help incoming students navigate ICS with helpful workshops, networking opportunities, and panel discussions! \n\nIn case you missed the event, here are some highlights!\n\n⭐ Student Panel\nPanelists:\nArianna Gonzalez 4th year Data Science\nKobe Harmon: 4th year transfer Computer Science\nRohit Rarichan: 4th year Computer Science \n\nThis panel went over some insightful topics such as internship searching, club/student involvement, balancing workload, and project development. The audience actively participated with the panel and gained knowledge from different perspectives and backgrounds! Please feel free to reach out and connect with the panelist if you have further questions! (Check out our LinkedIn post to find the panelists' LinkedIns!)\n\n⭐ Workshops\nClubs + Presentations:\nCODEC: https://codec.ics.uci.edu/\nHow to use Git/Terminal: https://lnkd.in/gYDj-8JK\n\nWICS UCI: https://wics.ics.uci.edu/\nHardware and environment set up: https://lnkd.in/gXTKwpZi\n\nBlack in Tech UCI: https://bit.ics.uci.edu/\nNavigating ICS: https://lnkd.in/gx-mmbJe\n\n⭐ Career Panel\nPanelists:\nColleen K. - First American\nSean Chang - Google\nAmy S. - Google\n\nThis panel contained relevant questions and discussion surrounding early career paths, AI usage in industry, and advice to undergrads on how to approach the industry. Panelists also participated in small group lunches with attendees and built personal connections!\n\nHuge thank you to the ICS OAI for sponsoring this event and supporting our community! 🤍 💙 🌐 \n\nCheck out our LinkedIn to stay connected! https://lnkd.in/gNRpaKNw",
+    "images": [
+      {
+        "filename": "ics_launch_day_header.png"
+      },
+      {
+        "filename": "ics_launch_day_1.jpeg"
+      },
+      {
+        "filename": "ics_launch_day_2.jpeg"
+      },
+      {
+        "filename": "ics_launch_day_3.jpeg"
+      },
+      {
+        "filename": "ics_launch_day_4.jpeg"
+      },
+      {
+        "filename": "ics_launch_day_5.jpeg"
+      },
+      {
+        "filename": "ics_launch_day_6.jpeg"
+      },
+      {
+        "filename": "ics_launch_day_7.jpeg"
+      },
+      {
+        "filename": "ics_launch_day_8.jpeg"
+      }
+    ],
+    "links": [
+      {
+        "href": "https://lnkd.in/gYDj-8JK"
+      },
+      {
+        "href": "https://lnkd.in/gXTKwpZi"
+      },
+      {
+        "href": "https://lnkd.in/gx-mmbJe"
+      },
+      {
+        "href": "https://lnkd.in/gNRpaKNw"
+      }
+    ]
+  },
+  {
     "id": "10132026-course-planning",
     "title": "Course Planning",
     "date": "October 13, 2026",
