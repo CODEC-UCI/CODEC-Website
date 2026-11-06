@@ -20,7 +20,7 @@
 
     <div class="content-wrapper">
         <h1>Meeting Blog</h1>
-        <p style="text-align: center; font-style: italic;">Check out what we've been up to.</p>
+        <p style="text-align: center; font-style: italic;">Check out what we've been up to!</p>
 
         <div id="events-list" class="events-grid" aria-live="polite">
             <!-- Event cards will be populated here from events.json -->
@@ -48,6 +48,7 @@
                     const card = document.createElement('article');
                     card.className = 'event-card';
                     card.innerHTML = `
+                        <div class="event-card-image"></div>
                         <div class="card-inner">
                             <div class="post-header">
                                 <span class="date">${ev.date}</span>
@@ -57,6 +58,18 @@
                             <p class="summary">${ev.summary}</p>
                         </div>
                     `;
+
+                    const heroImage = Array.isArray(ev.images)
+                        ? ev.images.find(image => image.filename)
+                        : undefined;
+                    if (heroImage) {
+                        const backgroundImage = document.createElement('img');
+                        backgroundImage.className = 'event-card-background';
+                        backgroundImage.src = `images/event-images/${heroImage.filename}`;
+                        backgroundImage.alt = '';
+                        backgroundImage.setAttribute('aria-hidden', 'true');
+                        card.querySelector('.event-card-image').appendChild(backgroundImage);
+                    }
                     
                     // 3. add click handler to each card to navigate to the event-detail page for more info
                     // give unique id
