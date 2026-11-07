@@ -1,5 +1,46 @@
 [
   {
+    "id": "10272026-resume-workshop",
+    "title": "Resume Workshop",
+    "date": "October 27, 2026",
+    "summary": "Join CODEC for a resume workshop to build the foundations of how to structure your resume! Learn how to structure your resume, turn your experience into impactful bullet points, and map out your intentions.",
+    "tag": [
+      "Professional"
+    ],
+    "content": "On October 27, 2026, CODEC held its first online resume workshop! The workshop focused on helping students build stronger resumes and better communicate their experiences, skills, and qualifications to potential employers.\n\nDuring the workshop, we went over the different components of a resume, including education, technical skills, languages, projects, leadership experiences, and extracurriculars. We also discussed ways to make these experiences stand out by using action verbs, incorporating measurable results, highlighting relevant keywords, and breaking down accomplishments into clear and concise bullet points. Additionally, we covered general formatting tips to help make resumes organized, readable, and effective.\n\nWhether you're creating your first resume or looking to improve an existing one, we hope these tips are helpful as you prepare for future opportunities! Check out the workshop recording below to follow along with the slides and revisit everything we covered.",
+    "images": [
+      {
+        "filename": "resume-workshop-banner.png"
+      }
+    ],
+    "links": [
+      {
+        "href": "https://www.youtube.com/watch?v=YgNkd8jHXwg"
+      }
+    ]
+  },
+  {
+    "id": "10292026-internship-application-workshop",
+    "title": "Internship Application Workshop",
+    "date": "October 29, 2026",
+    "summary": "Join CODEC to learn how to write effective cover letters, prep for interviews, build portfolios, and tailor your application for various roles! ",
+    "tag": [
+      "Workshop",
+      "Professional"
+    ],
+    "content": "On October 29, 2026, CODEC hosted our Internship Application workshop, where students learned about the different resources and materials involved in the internship application process, explored ways to find opportunities, and received guidance on preparing for future applications.\n\nWe went over how to build and improve resumes, cover letters, and portfolios, sharing examples from our own board members and introducing useful resources like Overleaf and resume templates. We also discussed networking strategies for events such as job fairs and career fairs, along with different platforms for finding internship opportunities, including Handshake, LinkedIn, and Lensa. To wrap up, we held an open Q&A session and set aside time for members to explore internships they were interested in, with board members available to provide one-on-one guidance throughout the process.\n\nWe hope these resources help students feel more confident navigating the internship search and application process. We wish everyone good luck with their internship search, and we look forward to seeing everyone at our next event!",
+    "images": [
+      {
+        "filename": "intership-app-workshop-banner.png"
+      }
+    ],
+    "links": [
+      {
+        "href": ""
+      }
+    ]
+  },
+  {
     "id": "09252026-ics-launch-day",
     "title": "ICS Launch Day",
     "date": "September 25, 2026",
