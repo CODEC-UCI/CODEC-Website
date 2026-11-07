@@ -100,7 +100,7 @@
           .map(link => `
             <li>
               <a href="${link.href}" target="_blank" rel="noopener noreferrer">
-                ${link.href}
+                ${link.text || link.href}
               </a>
             </li>
           `)

@@ -41,16 +41,20 @@
     ],
     "links": [
       {
-        "href": "https://lnkd.in/gYDj-8JK"
+        "href": "https://lnkd.in/gYDj-8JK",
+        "text": "Git Workshop Presentation"
       },
       {
-        "href": "https://lnkd.in/gXTKwpZi"
+        "href": "https://lnkd.in/gXTKwpZi",
+        "text": "Hardware and Environment Setup Presented by WICS"
       },
       {
-        "href": "https://lnkd.in/gx-mmbJe"
+        "href": "https://lnkd.in/gx-mmbJe",
+        "text": "Navigating ICS @ UCI Presented by BIT"
       },
       {
-        "href": "https://lnkd.in/gNRpaKNw"
+        "href": "https://lnkd.in/gNRpaKNw",
+        "text": "CODEC LinkTree"
       }
     ]
   },
@@ -79,10 +83,12 @@
     ],
     "links": [
       {
-        "href": "https://www.youtube.com/watch?v=t0iNQnRfeis"
+        "href": "https://www.youtube.com/watch?v=t0iNQnRfeis",
+        "text": "Course Planning Workshop Recap"
       },
       {
-        "href": "https://docs.google.com/document/d/1_-gf-VsqZFQ2q7k_YRK3AjJRusU06Q4PN-qCl8ozGvQ/edit?usp=sharing"
+        "href": "https://docs.google.com/document/d/1_-gf-VsqZFQ2q7k_YRK3AjJRusU06Q4PN-qCl8ozGvQ/edit?usp=sharing",
+        "text": "Course Planning Workshop Worksheet"
       }
     ]
   },
@@ -143,7 +149,8 @@
     ],
     "links": [
       {
-        "href": "https://docs.google.com/presentation/d/1H-uHiF6Dj5nrlRyrWk2ZW20owJiPgHO-KiNshQ_s_xQ/edit?usp=sharing"
+        "href": "https://docs.google.com/presentation/d/1H-uHiF6Dj5nrlRyrWk2ZW20owJiPgHO-KiNshQ_s_xQ/edit?usp=sharing",
+        "text": "Intern Talk & Connect Slides"
       }
     ]
   },
@@ -163,7 +170,8 @@
     ],
     "links": [
       {
-        "href": "https://docs.google.com/presentation/d/1CCKs5qZu0N9zRNv48M0A7qBPB1ahwAjjCypm19Sp6cE/edit?usp=sharing"
+        "href": "https://docs.google.com/presentation/d/177Bwk-OHseJm-lH-RGcUwQDZrlDYWl6Z6ocq1zqXhnw/edit?usp=sharing",
+        "text": "How to Start a Personal Project Slides"
       }
     ]
   },
@@ -195,7 +203,8 @@
     ],
     "links": [
       {
-        "href": "https://docs.google.com/presentation/d/1KdvLVhZRkCcskWywZ9BSX6TYlTZtY1HMrzzLGQjb920/edit?usp=sharing"
+        "href": "https://docs.google.com/presentation/d/1KdvLVhZRkCcskWywZ9BSX6TYlTZtY1HMrzzLGQjb920/edit?usp=sharing",
+        "text": "Game Night Social Slides"
       }
     ]
   }
