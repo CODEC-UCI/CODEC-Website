@@ -19,7 +19,9 @@ There is no complex build step, package install, or framework required. The site
 ### 1. Page files
 These are the main pages visitors see:
 - `index.html` — homepage
-- `about-us.html` — about page
+- `board-members.html` — board member page
+- `what-we-do.html` — CODEC mission and community offerings
+- `history.html` — organization history
 - `events.html` — event listing page
 - `event-detail.html` — individual event details page
 - `resources.html` — resources page
@@ -29,7 +31,7 @@ These are the main pages visitors see:
 - `style.css` — the main stylesheet for the whole site. Contains styling variables (`--dark-blue`, `--light-blue`, `--cream`) and responsive breakpoints at `768px`.
 
 ### 3. Shared UI components (JavaScript)
-- `components/header.js` — inserts the navigation header and controls the mobile dropdown.
+- `components/header.js` — inserts the navigation header, including the About dropdown with What We Do, About Us, and History links, and controls the mobile menu.
 - `components/footer.js` — inserts the footer.
 
 > ⚠️ **IMPORTANT:** To make changes to the header or footer, update *only* these JavaScript files. The changes will automatically apply across all pages. You do not need to edit headers and footers individually on each HTML file.
@@ -88,7 +90,7 @@ Refer to the detailed guide on our Google Drive for formatting the `events.json`
 This process is automated! Updates sync on a weekly schedule pulling from the Resources Google Sheet Script straight into `resources.csv`.
 
 ### Update general page text
-Edit the relevant HTML page directly, such as `about-us.html` or `contact-us.html`.
+Edit the relevant HTML page directly, such as `board-members.html` or `contact-us.html`.
 
 ## Good maintenance practices
 - **Asset Optimization:** Compress all images before uploading them. Large file sizes (above 1MB) slow down mobile loading times. Keep filenames descriptive and clean (e.g., `images/board/board-2026.png`).
