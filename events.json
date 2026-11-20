@@ -11,6 +11,9 @@
     "content": "On November 10, 2026, CODEC hosted our CODEC Hub: Intro & Q&A event, where students got a behind-the-scenes look at how we developed CODEC Hub, the problem that inspired us to create it, and the technologies and processes that brought the project to life.\n\nWe started by introducing the problem we wanted to address: making it easier for students to discover clubs and courses that align with their interests. From there, we walked through how CODEC Hub came together, starting with the idea of a Minimum Viable Product (MVP) and how to approach building a project from the ground up. We also explored some of the technical components behind the website, including web scraping, embeddings, user queries, data management, and the full tech stack we used to bring everything together.\n\nTo wrap things up, we opened the floor for a Q&A session where attendees could ask questions about the project, share their thoughts, and even suggest potential improvements to CODEC Hub!\n\nWe hope this gave everyone a better understanding of how projects like CODEC Hub are developed and inspired some of you to start building your own ideas. Thank you to everyone who joined us, and we hope to see you at our next event!",
     "images": [
       {
+        "filename": "codec_hub_1.png"
+      },
+      {
         "filename": "codec_hub_2.jpg"
       },
       {
